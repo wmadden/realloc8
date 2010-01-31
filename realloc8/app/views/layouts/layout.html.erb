@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <title>
+    <%=h yield(:title) || "Untitled" %>
+  </title>
+  
+  <%= yield(:head) %>
+  
+  <!-- base -->
+  <%= stylesheet_link_tag 'screen' %>
+  <%= stylesheet_link_tag 'ie' %>
+  <%= stylesheet_link_tag 'print', :media => 'print' %>
+
+  <!-- theme -->
+  <%= stylesheet_link_tag 'themes/default/screen' %>
+  <%= stylesheet_link_tag 'themes/default/print', :media => 'print' %>
+
+  <!-- custom -->
+  <%= stylesheet_link_tag 'custom' %>
+  
+  <!-- Javascript -->
+  <%= javascript_include_tag 'application' %>
+  
+</head>
+
+<body>
+  <div id="doc">
+    <div id="hd">
+      <h1 id="site-title">
+        Silverpond HTML/CSS Templates
+      </h1>
+      <p id="site-slogan">
+        People. Ideas. Tools. In that order.
+      </p>
+      <ul class="primary nav horizontal-menu">
+        <li class="current item">
+          <a href="#">Home</a>
+        </li>
+        <li class="item">
+          <a href="layouts.html">Layouts</a>
+        </li>
+        <li class="item">
+          <a href="components.html">Components</a>
+        </li>
+        <li class="item">
+          <a href="themes.html">Themes</a>
+        </li>
+        <li class="item">
+          <a href="formatting.html">Formatting</a>
+        </li>
+      </ul>
+    </div>
+    <div id="bd">
+      <div class="content">
+        <%- flash.each do |name, msg| -%>
+          <%= content_tag :div, msg, :id => "flash_#{name}" %>
+        <%- end -%>
+        
+        <%- if show_title? -%>
+          <h1><%=h yield(:title) %></h1>
+        <%- end -%>
+        
+        <%= yield %>
+      </div>
+    </div>
+    <div id="ft">
+      <div class="copyright content">
+        Built by Silverpond, 2009
+      </div>
+      <div class="footer">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

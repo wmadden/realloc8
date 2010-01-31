@@ -1,0 +1,45 @@
+////////////////////////////////////////////////////////////////////////////////
+/* mixins/floats.sass
+//
+// Purpose:
+//   Defines mixins for handling floats.
+// 
+// 29/11/2008
+// William Madden
+// w.a.madden@gmail.com
+////////////////////////////////////////////////////////////////////////////////
+
+// Apply to:  Containing Element
+// Purpose:   Forces container to stretch to accomodate floating blocks.
+// Notes:     should be used carefully with certain elements. Incorrect usage
+//            typically results in scrollbars appearing.
+// Author:    William Madden
+=contain-floats
+  :overflow auto
+
+
+// Apply to:  Containing element
+// Purpose:   As with contain-floats. Clears the floats within the container by
+//            adding an invisible element immediately after the container with
+//            the clear: both property.
+// Notes:     This fix is old. It was in common use prior to the "discovery"
+//            that overflow: auto has the same effect.
+// Author:    William Madden
+=clearfix
+  &:after
+    content:            "."
+    display:            block
+    height:             0
+    clear:              both
+    visibility:         hidden
+
+
+// From http://awardwinningfjords.com/2009/04/02/dont-repeat-yourself-use-sass-modules.html
+=clearfix2
+  overflow:             auto
+  overflow:             -moz-scrollbars-none
+  // This makes ie6 get layout
+  display:              inline-block
+  // and this puts it back to block
+  &
+    display:            block

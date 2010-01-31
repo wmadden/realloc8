@@ -1,0 +1,150 @@
+////////////////////////////////////////////////////////////////////////////////
+/* themes/defaults/base.sass
+// 
+// Defines the structure of the page, colours, backgrounds etcetera.
+// 
+// 30/11/2009
+// William Madden
+// w.a.madden@gmail.com
+////////////////////////////////////////////////////////////////////////////////
+
+@import _components
+!SEPARATION_WIDTH = 16px
+
+html
+  background:
+    color:            #47536C
+    image =           image_url("themes/default/base/html_bg.gif")
+    repeat:           repeat
+
+html,body
+  margin:             0
+  padding:            0
+  
+#doc
+  width:              900px
+  margin:             1.0em auto 0
+  background:
+    image =           image_url("themes/default/base/doc_top-cap.png")
+    repeat:           no-repeat
+    position:         50% 0
+  padding-top:        18px
+  
+#hd
+  background:
+    image =           image_url("themes/default/base/hd_bg.gif")
+    repeat:           repeat-y
+    position:         50% 0
+    color:            #3C74FF
+  color:              #FFFFFF
+  position:           relative
+  border:
+    left:             1px solid #272d39
+    right:            1px solid #272d39
+    bottom:           1px solid #1B4292
+  
+  #site-title, #site-slogan
+    text-shadow:      rgba(0,0,0,0.4) -1px 1px 5px
+  
+  #site-title, #site-slogan, .nav, .breadcrumbs
+    padding:
+      left =          !SEPARATION_WIDTH
+      right =         !SEPARATION_WIDTH
+  
+  #site-title
+    font-weight:      bold
+    font-size:        30px
+    line-height:      30px
+    font-family:      "Trebuchet MS"
+  
+  #site-slogan
+    font-style:       italic
+  
+  .nav, .breadcrumbs
+    margin-top =      !SEPARATION_WIDTH
+    +font-size( 11.5px )
+        
+  .breadcrumbs
+    +text-valign(21px)
+    background:
+      color:          #498aca
+      image =         image_url("themes/default/base/breadcrumbs_bg.gif")
+      repeat:         repeat-x
+    border:
+      top:            1px solid #417cdd
+    
+    &, a
+      //color:          #D6E1F4
+  
+  .nav
+    +tab-bar
+  
+  .login
+    position:         absolute
+    top:              0
+    right:            0
+    line-height:      1.5em
+    padding:
+      right:          1.0em
+  
+  a
+    color:            #FFFFFF
+  
+#bd
+  background-color:   #FFFFFF
+  border:
+    left:             1px solid #272d39
+    right:            1px solid #272d39
+  
+  .breadcrumbs
+    padding:
+      left =          !SEPARATION_WIDTH
+      right =         !SEPARATION_WIDTH
+    background:
+      color:          #719EFF
+    border:
+      bottom:         1px solid #1B4292
+    
+  .subnav
+    border:
+      bottom:         1px solid #DDDDDD
+    
+    // TODO: finish subnav styling
+    
+    a
+      color:          #3D4658
+    
+    .current.item
+      a
+        text-decoration:  none
+        color:        #3D4658
+  
+  .content
+    padding =         !SEPARATION_WIDTH
+
+#ft
+  background:
+    image =           image_url("themes/default/base/doc_bottom-cap.png")
+    repeat:           no-repeat
+    position:         50% 0
+    color:            transparent
+  text-align:         center
+  color:              #A2B3D4
+  padding:
+    top =             10px + 5px
+    bottom:           5px
+    left =            !SEPARATION_WIDTH
+    right =           !SEPARATION_WIDTH
+  font-size:          85%
+  
+  .copyright
+    +text-valign(20px)
+    
+    img
+      //vertical-align: middle
+      position:       relative
+      top:            4px
+      margin-right:   0.5em
+  
+  .footer
+    background-color: #47536C

@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+/* themes/defaults/property-sheet.sass
+// 
+// Default styles for property sheet component.
+// 
+// 11/12/2009
+// William Madden
+// w.a.madden@gmail.com
+////////////////////////////////////////////////////////////////////////////////
+
+@import yui/modules/_fonts
+
+dl.properties, .content dl.properties
+  border:               1px solid #D1D9E5
+  background-color:     #EFF3FF
+  
+  max-width:            421px
+  
+  &.form
+    line-height:        1.8em
+  
+  dt, dd
+    padding:
+      left:             2%
+      top:              4px
+      bottom:           4px
+  
+  dt
+    font-size:          85%
+    background-color:   #E4EEFF
+    border:
+      top:              1px solid #D1D9E5
+      right:            1px solid #D1D9E5
+      bottom:           1px solid #D1D9E5
+    margin-top:         -1px
+    
+  dd
+    //border-bottom:    1px solid #D1D9E5 
+    font-weight:        bold
+    padding-left:       2%
+  
+  .none
+    font-weight:        normal
+    +font-size( 11px )

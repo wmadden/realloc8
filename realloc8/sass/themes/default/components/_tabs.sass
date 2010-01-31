@@ -1,0 +1,68 @@
+////////////////////////////////////////////////////////////////////////////////
+/* themes/defaults/components/tabs.sass
+// 
+// Default styles for tabs and related components.
+// 
+// 11/12/2009
+// William Madden
+// w.a.madden@gmail.com
+////////////////////////////////////////////////////////////////////////////////
+
+=tab-bar( !color = #FFFFFF, !hover_color = #3D4658, !active_color = #3D4658, !active_bg = #FFFFFF, !bg_hover = #E0EAFF, !border_color = #0059C3, !overlap_color = #FFFFFF )
+  +horizontal-menu
+  margin:
+    left:           0
+    right:          0
+    bottom:         -1px
+  
+  .item
+    padding-top:    1px
+  
+  .current.item, .current.item:hover
+    background:
+      color =       !active_bg
+    border:
+      top =         1px "solid" !border_color
+      left =        1px "solid" !border_color
+      right =       1px "solid" !border_color
+      bottom =      1px "solid" !overlap_color
+    
+    padding:
+      top:          0
+      bottom:       0
+    margin-top:     0
+    font-size:      105%
+    
+    a
+      color =       !active_color
+      font-weight:  bold
+  
+  .item:hover
+    background-color = !bg_hover
+    margin-top:     1px
+    padding:
+      top:          0
+      bottom:       1px
+    
+    a
+      color =       !hover_color
+  
+  a
+    color:          !color
+    text-decoration: none
+    padding:        0.3em 1.6em
+
+.tab-bar, ul.tab-bar
+  +tab-bar( #2861D3, #3D4658, #3D4658, "transparent", #DEDEDE, #B0C0D2, #FFFFFF )
+
+.tab-pane
+  border:           1px solid #B0C0D2
+  padding:
+    top:            16px
+    left:           16px
+    right:          16px
+    bottom:         16px
+  
+.content .tab-pane
+  margin-bottom:    1.0em
+  

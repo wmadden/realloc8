@@ -1,0 +1,67 @@
+////////////////////////////////////////////////////////////////////////////////
+/* themes/defaults/components.sass
+// 
+// Styles for standard components.
+// 
+// 3/12/2009
+// William Madden
+// w.a.madden@gmail.com
+////////////////////////////////////////////////////////////////////////////////
+
+!TITLES = "h1,h2,h3,h4,h5,h6"
+
+@import ../../_mixins
+@import components/_button
+@import components/_property-sheet
+@import components/_tabs
+
+.pagination
+  text-align:           right
+  
+div.pagination
+  margin-bottom:        1.0em
+
+.actions, .content .actions
+  margin-left:          0
+  +text-valign( 26px )
+  
+  a
+    +text-valign( 26px )
+
+.inset.image
+  display:              block
+  text-align:           center
+  
+  img
+    border:             1px solid #D1D9E5
+    max-width:          400px
+    padding:            4px
+  
+  .caption
+    +text-valign( 26px )
+    font:
+      size:             85%
+      weight:           bold
+
+.action-title
+  +clearfix
+  
+  #{!TITLES}
+    +text-valign( 26px )
+    float:              left
+  
+  .actions
+    float:              right
+
+.breadcrumbs
+  +horizontal-menu( 24px )
+  
+  .item.root
+    padding-left:       0
+    background-image:   none
+    
+  .item
+    +icon("guillemet-right.png", 4px, "themes/default/icons")
+    +text-valign( 24px )
+  
+  

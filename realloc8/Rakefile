@@ -8,3 +8,10 @@ require 'rake/testtask'
 require 'rake/rdoctask'
 
 require 'tasks/rails'
+
+desc """Builds SASS resources."""
+task :sass do
+  puts "BUILDING SASS >>"
+  system("compass")
+  puts "--"
+end

@@ -1,0 +1,33 @@
+////////////////////////////////////////////////////////////////////////////////
+/* mixins/menu.sass
+// 
+// Defines horizontal and vertical menu mixins.
+// 
+// 11/12/2008
+// William Madden
+// w.a.madden@gmail.com
+////////////////////////////////////////////////////////////////////////////////
+
+// Lays elements out horizontally, floating them left by default
+=horizontal-menu( !line_height = 1.5em, !float_dir = "left" )
+  display:              block
+  +clearfix
+  
+  .item
+    display:            block
+    float =             !float_dir
+    
+    a
+      display:          block
+      line-height =     !line_height
+
+// Lays elements out vertically
+=vertical-menu( !line_height = 1.5em )
+  display:              block
+  
+  .item
+    display:            block
+    
+    a
+      display:          block
+      line-height =     !line_height

@@ -1,0 +1,125 @@
+/* print.sass */
+/* TODO: Silverpond License */
+
+/* mixins.sass */
+/* mixins/icon.sass */
+
+/* mixins/menu.sass */
+
+/* mixins/text-replace.sass */
+
+/* mixins/floats.sass */
+
+/* mixins/valign.sass */
+
+/* formatting.sass */
+/* yui/base.sass */
+
+body { line-height: 1.5em; }
+
+.content h1 { font-size: 138.5%; }
+.content h2 { font-size: 123.1%; }
+.content h3 { font-size: 108%; }
+.content h1, .content h2, .content h3 { margin: 1em 0; }
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .content strong { font-weight: bold; }
+.content abbr, .content acronym { border-bottom: 1px dotted #000; cursor: help; }
+.content em { font-style: italic; }
+.content blockquote, .content ul, .content ol, .content dl { margin: 1em; }
+.content ol, .content ul, .content dl { margin-left: 2em; }
+.content ol li { list-style: decimal outside; }
+.content ul li { list-style: disc outside; }
+.content dl dd { margin-left: 1em; }
+.content th, .content td { border: 1px solid #000; padding: .5em; }
+.content th { font-weight: bold; text-align: center; }
+.content caption { margin-bottom: .5em; text-align: center; }
+.content p, .content fieldset, .content table, .content pre { margin-bottom: 1em; }
+.content input[type=text], .content input[type=password] { width: 12.25em; *width: 11.9em; }
+.content textarea { width: 12.25em; *width: 11.9em; }
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .content blockquote, .content ul, .content ol, .content dl { margin-top: 0; }
+
+form.formtastic { margin: 0; padding: 0; }
+form.formtastic ul, form.formtastic ol, form.formtastic li, form.formtastic fieldset, form.formtastic legend, form.formtastic input, form.formtastic textarea, form.formtastic select, form.formtastic p { margin: 0; padding: 0; }
+form.formtastic fieldset { border: 0; }
+form.formtastic em, form.formtastic strong { font-style: normal; font-weight: normal; }
+form.formtastic ol, form.formtastic ul { list-style: none; }
+form.formtastic abbr, form.formtastic acronym { border: 0; font-variant: normal; }
+form.formtastic input, form.formtastic textarea, form.formtastic select { font-family: inherit; font-size: inherit; font-weight: inherit; }
+form.formtastic input, form.formtastic textarea, form.formtastic select { font-size: 100%; }
+form.formtastic legend { color: #000; }
+form.formtastic fieldset { display: inline-block; }
+form.formtastic fieldset.buttons { padding-left: 25%; }
+form.formtastic fieldset.buttons li { float: left; padding-right: 0.5em; }
+form.formtastic fieldset:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+html[xmlns] form.formtastic fieldset { display: block; }
+
+* html form.formtastic fieldset { height: 1%; }
+
+form.formtastic fieldset ol li { margin-bottom: 1.5em; display: inline-block; }
+form.formtastic fieldset ol li:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+html[xmlns] form.formtastic fieldset ol li { display: block; }
+
+* html form.formtastic fieldset ol li { height: 1%; }
+
+form.formtastic fieldset ol li label { display: block; width: 25%; float: left; padding-top: .2em; }
+form.formtastic fieldset ol li li label { line-height: 100%; padding-top: 0; }
+form.formtastic fieldset ol li li label input { line-height: 100%; vertical-align: middle; margin-top: -0.1em; }
+form.formtastic fieldset ol li fieldset { position: relative; }
+form.formtastic fieldset ol li fieldset legend { position: absolute; width: 25%; padding-top: 0.1em; }
+form.formtastic fieldset ol li fieldset legend span { position: absolute; }
+form.formtastic fieldset ol li fieldset ol { float: left; width: 74%; margin: 0; padding: 0 0 0 25%; }
+form.formtastic fieldset ol li fieldset ol li { padding: 0; border: 0; }
+form.formtastic fieldset ol li p.inline-hints { color: #666; margin: 0.5em 0 0 25%; }
+form.formtastic fieldset ol li p.inline-errors { color: #cc0000; margin: 0.5em 0 0 25%; }
+form.formtastic fieldset ol li ul.errors { color: #cc0000; margin: 0.5em 0 0 25%; list-style: square; }
+form.formtastic fieldset ol li ul.errors li { padding: 0; border: none; display: list-item; }
+form.formtastic fieldset ol li.string input, form.formtastic fieldset ol li.password input, form.formtastic fieldset ol li.numeric input, form.formtastic fieldset ol li.text textarea { width: 74%; }
+form.formtastic fieldset ol li.hidden { display: none; }
+form.formtastic fieldset ol li.boolean label { padding-left: 25%; width: auto; }
+form.formtastic fieldset ol li.boolean label input { margin: 0 0.5em 0 0.2em; }
+form.formtastic fieldset ol li.radio fieldset ol, form.formtastic fieldset ol li.check_boxes fieldset ol { margin-bottom: -0.6em; }
+form.formtastic fieldset ol li.radio fieldset ol li, form.formtastic fieldset ol li.check_boxes fieldset ol li { margin: 0.1em 0 0.5em 0; }
+form.formtastic fieldset ol li.radio fieldset ol li label, form.formtastic fieldset ol li.check_boxes fieldset ol li label { float: none; width: 100%; }
+form.formtastic fieldset ol li.radio fieldset ol li label input, form.formtastic fieldset ol li.check_boxes fieldset ol li label input { margin-right: 0.2em; }
+form.formtastic fieldset ol li.date fieldset ol li, form.formtastic fieldset ol li.time fieldset ol li, form.formtastic fieldset ol li.datetime fieldset ol li { float: left; width: auto; margin: 0 .3em 0 0; }
+form.formtastic fieldset ol li.date fieldset ol li label, form.formtastic fieldset ol li.time fieldset ol li label, form.formtastic fieldset ol li.datetime fieldset ol li label { display: none; }
+form.formtastic fieldset ol li.date fieldset ol li label input, form.formtastic fieldset ol li.time fieldset ol li label input, form.formtastic fieldset ol li.datetime fieldset ol li label input { display: inline; margin: 0; padding: 0; }
+
+/* icons.sass */
+.icon.save { background-image: url('/images/icons/disk.png?1264922714'); }
+.icon.find { background-image: url('/images/icons/find.png?1264922714'); }
+.icon.photos { background-image: url('/images/icons/photos.png?1264922714'); }
+.icon.new-photo { background-image: url('/images/icons/photo_add.png?1264922714'); }
+.icon.search { background-image: url('/images/icons/magnifier.png?1264922714'); }
+.icon.car { background-image: url('/images/icons/car.png?1264922714'); }
+.icon.eye { background-image: url('/images/icons/eye.png?1264922714'); }
+.icon.settings { background-image: url('/images/icons/wrench.png?1264922714'); }
+.icon.dollar { background-image: url('/images/icons/money_dollar.png?1264922714'); }
+.icon.chart { background-image: url('/images/icons/chart_curve.png?1264922714'); }
+.icon.cash { background-image: url('/images/icons/money.png?1264922714'); }
+.icon.history { background-image: url('/images/icons/time.png?1264922714'); }
+.icon.payment { background-image: url('/images/icons/money_add.png?1264922714'); }
+.icon.info { background-image: url('/images/icons/information.png?1264922714'); }
+.icon.report { background-image: url('/images/icons/report.png?1264922714'); }
+.icon.person { background-image: url('/images/icons/user.png?1264922714'); }
+.icon.picture { background-image: url('/images/icons/picture.png?1264922714'); }
+.icon.group { background-image: url('/images/icons/group.png?1264922714'); }
+.icon.vcard { background-image: url('/images/icons/vcard.png?1264922714'); }
+.icon.summary, .icon.details { background-image: url('/images/icons/application_view_list.png?1264922714'); }
+.icon.wait { background-image: url('/images/icons/hourglass.png?1264922714'); }
+.icon.time { background-image: url('/images/icons/clock.png?1264922714'); }
+.icon.bar-chart { background-image: url('/images/icons/chart_bar.png?1264922714'); }
+.icon.date-previous { background-image: url('/images/icons/date_previous.png?1264922714'); }
+.icon.date-next { background-image: url('/images/icons/date_next.png?1264922714'); }
+.icon.box { background-image: url('/images/icons/box.png?1264922714'); }
+.icon.new, .icon.add { background-image: url('/images/icons/add.png?1264922714'); }
+.icon.delete { background-image: url('/images/icons/cross.png?1264922714'); }
+.icon.back { background-image: url('/images/icons/arrow_left.png?1264922714'); }
+.icon.edit { background-image: url('/images/icons/pencil.png?1264922714'); }
+.icon.pdf { background-image: url('/images/icons/pdf.gif?1264922714'); }
+.icon.remove { background-image: url('/images/icons/delete.png?1264922714'); }
+.icon.password { background-image: url('/images/icons/key.png?1264922714'); }
+.icon.online { background-image: url('/images/icons/bullet_green.png?1264922714'); }
+.icon.offline { background-image: url('/images/icons/bullet_red.png?1264922714'); }
+.icon.test-connection { background-image: url('/images/icons/transmit.png?1264922714'); }

@@ -1,0 +1,88 @@
+////////////////////////////////////////////////////////////////////////////////
+/* themes/defaults/components/button.sass
+// 
+// Styles for buttons and icon links.
+// 
+// 3/12/2009
+// William Madden
+// w.a.madden@gmail.com
+////////////////////////////////////////////////////////////////////////////////
+
+input[type="submit"].button, .formtastic input[type="submit"].button
+  padding:              4px 2px 4px 4px
+  
+  &.icon
+    padding-left:       26px
+
+.icon.no-text
+  background:
+    position:           50% 50%
+    repeat:             no-repeat
+  
+  +hide-text
+  padding-left:         16px
+  
+td.icon.no-text
+  display:              table-cell
+
+.button, .formtastic .button
+  cursor:               pointer
+  padding:              4px 8px
+  background:
+    color:              #ECF0F6
+  font:
+    weight:             bold
+    size:               93%
+  color:                #3D4658
+  text-shadow:          #FFFFFF -1px -1px 0.2px
+  -moz-border-radius:   5px
+  -webkit-border-radius: 5px
+  border:               1px solid #BBBBDD
+  
+  &[disabled=disabled], &.disabled
+    background:
+      color:            #E6EBF6
+    color:              #AAAAAA
+  
+  &:hover
+    box-shadow:         0 0 5px #B7D8FF
+    -moz-box-shadow:    0 0 5px #B7D8FF
+    background:
+      color:            #FBFCFF
+  
+.button.icon, a.icon, .formtastic .button.icon
+  padding-left:         26px
+  
+  background:
+    position:           6px 50%
+    repeat:             no-repeat
+  
+  min-height:           16px
+
+.actions, .content .actions
+  margin-bottom: 0
+
+a, .actions a, .content a, .content .actions a
+  &.button
+    text-decoration:    none
+    +text-valign( 16px )
+    color:              inherit
+    
+  &.icon
+    background:
+      position:         4px 50%
+    
+    padding-left:       24px
+    padding-top:        4px
+    padding-bottom:     4px
+    
+    &:hover
+      background:
+        color:          #E4EEFF
+  
+  &.button, &.icon
+    padding-right:      4px
+    
+    &.no-text
+      width:            0
+      padding-right:    0

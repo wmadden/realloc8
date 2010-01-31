@@ -1,0 +1,33 @@
+////////////////////////////////////////////////////////////////////////////////
+/* mixins/text-replace.sass
+// 
+// Defines text-replace mixins.
+// 
+// 30/11/2009
+// William Madden
+// w.a.madden@gmail.com
+////////////////////////////////////////////////////////////////////////////////
+
+=hide-text
+  text-indent:          -9999em
+  overflow:             hidden
+  display:              block
+
+=replace-text( !img, !x = 50%, !y = 50% )
+  +hide-text
+  background:
+    image =             url(!img)
+    repeat:             no-repeat
+    position =          !x !y
+
+=replace-text2( !img, !width, !height )
+  display:              block
+  padding-top:          !height
+  width:                !width
+  height:               1%
+  overflow:             hidden
+  background:
+    image:              url(!img)
+    position:           center middle
+    repeat:             no-repeat
+  

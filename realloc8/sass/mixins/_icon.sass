@@ -1,0 +1,17 @@
+////////////////////////////////////////////////////////////////////////////////
+/* mixins/icon.sass
+// 
+// Icon mixins.
+// 
+// 15/12/2009
+// William Madden
+// w.a.madden@gmail.com
+////////////////////////////////////////////////////////////////////////////////
+
+=icon( !name, !padding = 4px, !path = "icons" )
+  background:
+    position =          !padding 50%
+    image =             image_url("#{!path}/#{!name}")
+    repeat:             no-repeat
+  padding-left =        16 + 2 * !padding
+  +text-valign( 16px + !padding )

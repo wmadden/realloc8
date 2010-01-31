@@ -1,0 +1,89 @@
+////////////////////////////////////////////////////////////////////////////////
+/* components/form.sass
+//
+// Purpose:
+//   Defines styles for displaying simple forms, labels on the left, inputs on
+//   the right.
+//  
+// Pattern:
+//   .form
+//     .control
+//       .label
+//       .input
+//   .actions
+//     .action[.positive|.negative]
+// 
+//   The containing block (.form) need not be the immediate container of
+//   controls or actions. This is useful for, for example, using YUI CSS grids
+//   to organize the form.
+// 
+//   The .label and .input elements should not be applied directly to labels
+//   and inputs, but instead should be used on a container element. This is due
+//   to the fact that padding and some other properties have very different
+//   effects on input and label elements.
+//  
+//   There is often a need for an area dedicated to containing actions, such as
+//   "search", "go", "submit", or "back", "return", "done". These are examples
+//   of positive and negative actions. All actions in the .actions block will
+//   float horizontally, with positive actions to the right, and negative
+//   actions to the left. Neutral actions will be centered.
+//  
+// 21/10/2008
+// William Madden
+// w.a.madden@gmail.com
+////////////////////////////////////////////////////////////////////////////////
+
+// Constants
+!FORM_LABEL_COLON   ||= ""
+!ACTION_LINE_HEIGHT ||= 25px
+
+.form
+  margin-bottom:        1.0em
+  
+  fieldset
+    padding:            1.0em
+    border:             1px solid #BFD2DD
+    margin:             1.0em
+    
+    legend:after
+      //content         = !FORM_LABEL_COLON
+  
+  .control
+    height:             2.2em
+    display:            block
+    line-height:        2.2em
+
+    .label
+      float:            left
+      width:            42%
+      text-align:       right
+      
+      &:after
+        //content       = !FORM_LABEL_COLON
+
+    .input
+      float:            left
+      width:            50%
+      text-align:       left
+      padding-left:     5%
+      
+.actions, .content .actions
+  margin:               0
+
+.actions
+  +clearfix
+  display:              block
+  
+  .action
+    float:              left
+    
+    &.positive
+      float:            right
+      margin-left:      0.4em
+    
+    &.negative
+      float:            left
+      margin-right:     0.4em
+    
+  li.action
+    list-style-type:    none
