@@ -145,6 +145,8 @@ html, body { margin: 0; padding: 0; }
 .content tbody tr { background-color: #E4EEFF; }
 .content tr.odd, .content li.odd, .content dt.odd, .content dd.odd { background-color: #EFF3FF; }
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 { font-family: "Trebuchet MS"; }
+.content fieldset { border: 1px solid #DDDDDD; margin-bottom: 1.0em; padding: 0.5em; }
+.content legend { color: inherit; padding: 0 0.5em; font-weight: bold; }
 
 /* themes/defaults/components.sass */
 /* mixins.sass */
