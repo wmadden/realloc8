@@ -1,0 +1,73 @@
+  <div class="yui-ge">
+            <div class="first yui-u">
+              <h2>Timetable</h2>
+              <table class="timetable">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                  </tr>
+                </thead>
+                <tfoot></tfoot>
+                          <tbody>
+                  <% for time in @times_list %>
+                    <tr>
+                      <td><%= time %></td>
+                      <% for day in @days  %> 
+                        <td><%= @timetable[day][time] if @timetable[day]  %></td>
+                      <% end %>
+                    <tr>
+                  <% end %>
+                </tbody>
+              </table>
+            </div>
+            <div class="yui-u">
+              <h2>Control Panel</h2>
+              <div class="control-panel">
+                <form action='/timetable'>
+                  <fieldset>
+                    <legend>Subjects</legend>
+                    <input name="login" type="text" cols="40" />
+                    <input name="pin" type="text" cols="40" />
+                    <input name="subject1" type="text" cols="40" />
+                    <input name="subject2" type="text" cols="40" />
+                    <input name="subject3" type="text" cols="40" />
+                    <input name="subject4" type="text" cols="40" />
+                  </fieldset>
+                  <fieldset>
+                    <legend>Options</legend>
+                    Favour classes in the
+                    
+                    <div style="width: 100px; margin: 0 auto;">
+                      <input type="radio" name="favour"
+                        style="position: relative; top: 2px;"
+                        id="favour_morning" value="morning"/>
+                      <label for="favour_morning">Morning</label>
+                      
+                      <br/>
+                      
+                      <input type="radio" name="favour"
+                        style="position: relative; top: 2px;"
+                        id="favour_afternoon" value="afternoon"/>
+                      <label for="favour_afternoon">Afternoon</label>
+                      
+                      <br/>
+                      
+                      <input type="radio" name="favour" checked="checked"
+                        style="position: relative; top: 2px;"
+                        id="favour_nothing" value="nothing"/>
+                      <label for="favour_nothing">Don't care</label>
+                    </div>
+                    
+                  </fieldset>
+                  <div class="actions">
+                    <input type="submit" value="Generate Timetable" class="new icon action button" style="margin: 0 auto; float: none; display: block;"/>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>

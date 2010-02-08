@@ -1,0 +1,840 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/2000/REC-xhtml1-20000126/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><!-- InstanceBegin template="/Templates/studentadmin_home.dwt" codeOutsideHTMLIsLocked="false" --><head>	<!-- InstanceBeginEditable name="doctitle" -->	<title>SIS - Student Information System : The University of Melbourne</title>	<!-- InstanceEndEditable -->	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />	<!-- InstanceBeginEditable name="head" -->	<meta name="DC.Title" content="Student Information System" />	<meta name="DC.Creator" content="Student Management Systems" />	<meta name="UM.Creator.Email" content="sa-sishelp2@unimelb.edu.au" />	<meta name="DC.Subject" content="Student Information System" />	<meta name="Keywords" content="Student, Students, Services, Service, Information, Administration, University" />	<meta name="DC.Description" content="Student Information System" />	<meta name="Description" content="Student Information System" />	<meta name="DC.Publisher" content="Student Management Systems" />	<meta name="DC.Contributor" content="Student Management Systems" />	<meta name="DC.Date" scheme="ISO 8601" content="2006-06-28" />	<meta name="UM.Date.ReviewDue" scheme="ISO 8601" content="2007-06-28" />	<meta name="UM.Authoriser.Name" content="Katherine Ciacia" />	<meta name="UM.Authoriser.Title" content="Manager, Student Management Systems" />	<meta name="UM.Maintainer.Name" content="" />	<meta name="UM.Maintainer.Department" content="Student Management Systems" />	<meta name="UM.Maintainer.Email" content="sa-sishelp2@unimelb.edu.au" />	<meta name="DC.Language" scheme="RFC 1766" content="en" />	<!-- InstanceEndEditable -->	<meta name="DC.Rights" content="http://www.unimelb.edu.au/disclaimer/" />	<meta name="DC.Format" scheme="IMT" content="text/html" />	<meta name="DC.Identifier" content="https://sis.unimelb.edu.au/" />	<meta name="DC.Date.Modified" scheme="ISO 8601" content="2006-06-28" />	<!-- START STYLE SHEET REFERENCES - DO NOT DELETE THE FOLLOWING TAG -->	<link rel="stylesheet" href="/template-assets/styles/basic.css" type="text/css" media="screen"/>	<link rel="stylesheet" href="/template-assets-custom/styles/basic.css" type="text/css" media="screen"/>	<link rel="stylesheet" href="/template-assets/styles/print.css" type="text/css" media="print" />	<style type="text/css" media="screen">		<!--		    @import url("/template-assets/styles/compliant.css");			@import url("/template-assets-custom/styles/compliant.css");		-->	</style>	<script language="JavaScript" type="text/javascript" src="/template-assets/js/scripts.js"></script>	<script language="JavaScript" type="text/javascript" src="/template-assets/js/menu.js"></script>	<!-- InstanceBeginEditable name="styles" -->	<script language="JavaScript" type="text/javascript">		<!-- hide from old browsers		// The folowing variable can be used to define a parent for pages below the 3rd level of the menu		// var menuParent = "/aboutus/";		// -->	</script>	<!-- InstanceEndEditable -->	<script language="JavaScript" type="text/javascript">		<!-- hide from old browsers			function start(){ menuSet(); if (window.customStart) { customStart(); }}		// -->	</script>		<!-- END STYLE SHEET REFERENCE -->	<!-- The following Dreamweaver parameters set the visibility of the RHS image-->	<!-- Use Modify - Template Properties to change the value -->	<!-- InstanceParam name="side image" type="boolean" value="true" -->	<!-- InstanceParam name="layout" type="number" value="1" --></head><body onload="start() ; window.opener.refresh()">	<div id="top">		<table border="0" width="100%" cellspacing="0" cellpadding="0" summary="This table contains the University branding bar and 			includes links to the top levels of the website, the University logo and the input box for the University search engine.">			<tr>				<td rowspan="3" width="135" class="logocell" valign="bottom">					<!-- Start c_logo.html include v20042004 -->					<table width="135" border="0" cellpadding="0" cellspacing="0" summary="This table contains the University logo 						and link to the University homepage.">						<tr>							<td id="customlogo"><a href="http://www.unimelb.edu.au/"><img 								src="/template-assets-custom/images/custom_logo_crest_comb.gif" width="135" height="121" border="0" 								alt="The University of Melbourne [logo]" hspace="0" vspace="0" align="bottom" /></a></td>						</tr>					</table>					<!-- End c_logo.html include -->				</td>				<td class="topnavcell" nowrap="nowrap" valign="bottom"> <a href="#content" accesskey="c" 					title="Skip past navigation to main part of page"><img src="/template-assets/images/navbar_curve22.gif" 					align="top" hspace="0" vspace="0" border="0" width="55" height="22" alt="Skip past navigation to main part of page" /></a>				</td>				<td class="topnavcell" nowrap="nowrap">					<!-- Start g_uni_menu_dropdown.html include v20042004 -->					<form method="get" action="http://www.unimelb.edu.au/cgi-bin/nph-redirect.pl" name="linksform" id="linksform">						<table cellpadding="0" cellspacing="2" border="0" align="left" summary="This table contains the dropdown box for 							University links.">							<tr>								<td class="topnavcell" nowrap="nowrap"><label for="url"><span class="topnavlabel">Uni Links: </span></label></td>								<td class="topnavcell" nowrap="nowrap">									<select class="dropdown" name="url" id="url" 										onchange="linksform.action=url[url.selectedIndex].value;linksform.submit();">										<option selected="selected" value="http://www.unimelb.edu.au/">University Homepage</option>										<option value="http://www.unimelb.edu.au/about/">About the University</option>										<option value="http://www.unimelb.edu.au/student/">Students</option>										<option value="http://www.unimelb.edu.au/ExtRels/research/">Research</option>										<option value="http://www.unimelb.edu.au/community/">Community</option>										<option value="http://uninews.unimelb.edu.au/">News</option>										<option value="http://events.unimelb.edu.au/">Events</option>										<option value="http://www.unimelb.edu.au/az/faculties.html">Faculties</option>										<option value="http://www.unimelb.edu.au/az/index.html">A-Z Directory</option>										<option value="http://www.lib.unimelb.edu.au/">Library</option>									</select>								</td>								<td><input type="image" class="linksbtn" name="Go" value="Go!" src="/template-assets/images/btn_go_top.gif" 									style="display:block;" accesskey="g" alt="Go" /></td>							</tr>						</table>					</form>					<!-- End g_uni_menu_dropdown.html include -->				</td>				<td class="topnavcell" nowrap="nowrap" align="right">					<!-- Start g_search_labelled.html include v20042004 -->					<form method="get" action="http://websearch.its.unimelb.edu.au/query.html" name="searchform" id="searchform">						<input type="hidden" name="qp" value="" />						<input type="hidden" name="col" value="unimelb" />						<input type="hidden" name="ht" value="0" />						<input type="hidden" name="qs" value="" />						<input type="hidden" name="qc" value="" />						<input type="hidden" name="pw" value="100%" />						<input type="hidden" name="ws" value="0" />						<input type="hidden" name="qm" value="0" />						<input type="hidden" name="st" value="1" />						<input type="hidden" name="nh" value="25" />						<input type="hidden" name="lk" value="1" />						<input type="hidden" name="rf" value="0" />						<input type="hidden" name="rq" value="0" />						<input type="hidden" name="si" value="1" />						<table cellpadding="0" cellspacing="2" border="0" align="right" summary="This table contains the input box for the 							University search engine.">							<tr>								<td class="topnavcell" valign="middle" nowrap="nowrap"> <label for="searchtext"><span 									class="topnavlabel">Uni Search: </span></label></td>								<td class="topnavcell" nowrap="nowrap"> <input class="searchtext" id="searchtext" 									style="height:15px;border:solid 1px #7898b5;" type="text" name="qt" value=" University site search" 									size="24" accesskey="s" onfocus="focusField(this, ' University site search')" 									onblur="blurField(this, ' University site search')" /></td>								<td valign="middle"> <input type="image" name="Search" value="Search" 									src="/template-assets/images/btn_search_top.gif" style="display:block;" accesskey="s" alt="Search" /></td>							</tr>						</table>					</form>					<!-- End g_search_labelled.html include -->				</td>			</tr>			<tr>				<td height="70" width="55">&nbsp;</td>				<td colspan="2" width="99%" valign="middle" class="banner">					<!-- SELECT THE SSI FILE TO SUIT THE LAYOUT OF THE BRANDING SPACE -->					<!-- InstanceBeginEditable name="brandingspace" -->					<!-- Start c_branding_space.html include v20042004 -->					<img align="right" src="/template-assets-custom/images/globalimage.gif" alt="branding image" width="200" height="70" />					<h1><a href="/">Student Information System</a></h1>					<!-- End c_branding_space.html include -->					<!-- InstanceEndEditable --> </td>			</tr>			<tr valign="top">				<td class="customsecondnavfill" height="29" colspan="3">					<!-- Start c_quick_links.html include v20042004 -->					<table cellpadding="0" cellspacing="0" border="0" align="right" summary="This table contains links to the top 						levels on the University website.">						<tr>							<td> <img src="/template-assets/images/grey_nav_curve.gif" alt="" width="50" height="29" hspace="0" 								vspace="0" border="0" align="left" /></td>							<td class="secondnav"><a href="http://www.studentadmin.unimelb.edu.au/leclist.html">Lecture Theatres</a> : 								<a href="http://www.studentadmin.unimelb.edu.au/dictionary.html">Dictionary</a> : 								<a href="http://www.unimelb.edu.au/az/faculties.html">Faculties</a> : 								<a href="http://www.unimelb.edu.au/az/index.html">A-Z Directory</a> : 								<a href="http://studentadmin-unimelb.custhelp.com/cgi-bin/studentadmin_unimelb.cfg/php/enduser/ask.php" title="Contact Student Admin Help Desk">Help</a>							</td>						</tr>					</table>					<!-- End c_quick_links.html include -->				</td>			</tr>		</table>	</div>	<div class="printonly"> <img src="/template-assets/images/logo_print.gif" alt="" />	</div><!-- START MIDDLE SECTION -->	<div id="midsection">		<table class="gridtable" cellpadding="0" cellspacing="0" border="0" summary="This table contains the main content of the page.">			<tr>				<td valign="top">
+<DIV name="portal_keep">
+ <p>
+<H3><font color="#0000FF">2010 Subject Timetable</font></H3>
+
+<font size="-1">
+
+<p><b>2010 Timetable</b><br>
+Released: 5th November 2009</p>
+  Last Updated: 
+<div id='LastModified2010'>Tue 02/02/2010 18:12:39  </div>
+  <br>
+  Status: Final
+  
+<p><b>2009 Timetable</b> Released: 15 September, 2008, Status: Final<br>
+  Last Updated: Thu 15/10/2009 19:15:21  </p>
+ 
+<P><font size="-1"><a href="http://sis.unimelb.edu.au/cgi-bin/subjects.pl/">View 
+  Timetable</a> </font></p>
+<p><strong>To understand your timetable, please note:</strong></p>
+   
+<table border="1">
+<tr><td>L = Lecture</td></tr>
+<tr><td>P = Practical</td></tr>
+<tr><td>S = Seminar</td></tr>
+<tr><td>T = Tutorial </td></tr>
+
+<tr><td>W = Workshop</td></tr>
+<tr><td>PB = Problem-based </td></tr>
+<tr><td>FW = Field Work </td></tr>
+<tr><td>CL = Clinical Laboratory </td></tr>
+<tr><td>CP = Clinical Placement </td></tr>
+<tr><td>CR = Clinical Practice </td></tr>
+<tr><td>CC = Concert Class </td></tr>
+<tr><td>IC = Instrument Class </td></tr>
+<tr><td>RH = Rehearsal </td></tr>
+
+<tr><td>SC = Screening </td></tr>
+<tr><td>ST = Studio </td></tr>
+</table>
+<ul>
+  <li> The letter indicates the type of activity (see legend above) 
+  <li> The first number indicates which activity it is, <strong>eg.</strong><br>
+    L1 stands for the first weekly lecture for the subject<br>
+    L2 stands for the second weekly lecture for the subject<br>
+    P1 stands for the first weekly practical session for the subject, etc. 
+  <li> The second number (after the slash) indicates the different streams or 
+    repeats available for that activity. You only need to attend one stream for 
+    each activity, <strong>eg.</strong><br>
+    L1/01 stands for Lecture 1, Stream 1<br>
+    L1/02 stands for Lecture 1, Stream 2, etc. 
+</ul>
+<hr>  
+</font>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         360842 for the subject's code
+         Biomedical Research Management for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 360842 Biomedical Research Management</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         654634 for the subject's code
+         Biometry for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 654634 Biometry</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         411693 for the subject's code
+         Biomolecular Process Principles for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 411693 Biomolecular Process Principles</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         606671 for the subject's code
+         Botany Research Project Major for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 606671 Botany Research Project Major</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         606672 for the subject's code
+         Botany Research Project Major for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 606672 Botany Research Project Major</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         606673 for the subject's code
+         Botany Research Project Major for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 606673 Botany Research Project Major</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         606675 for the subject's code
+         Botany Research Project Major for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 606675 Botany Research Project Major</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         606636 for the subject's code
+         Botany Research Project Minor for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 606636 Botany Research Project Minor</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         606637 for the subject's code
+         Botany Research Project Minor for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 606637 Botany Research Project Minor</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         606638 for the subject's code
+         Botany Research Project Minor for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 606638 Botany Research Project Minor</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         606639 for the subject's code
+         Botany Research Project Minor for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 606639 Botany Research Project Minor</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         360832 for the subject's code
+         Bulk Freight Markets for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 360832 Bulk Freight Markets</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         220503 for the subject's code
+         Bushfire & Biodiversity for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 220503 Bushfire & Biodiversity</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         220502 for the subject's code
+         Bushfire & Climate for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 220502 Bushfire & Climate</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         220410 for the subject's code
+         Bushfire Planning & Management for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 220410 Bushfire Planning & Management</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         600655 for the subject's code
+         Business Forecasting for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 600655 Business Forecasting</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         208725 for the subject's code
+         Business Strategy for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 208725 Business Strategy</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         306620 for the subject's code
+         Business Systems Analysis for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 306620 Business Systems Analysis</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         733543 for the subject's code
+         CTLS Program# for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 733543 CTLS Program#</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         360761 for the subject's code
+         Caretaking Rivers for the Community for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 360761 Caretaking Rivers for the Community</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         360749 for the subject's code
+         Case Studies in e-Forensic for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 360749 Case Studies in e-Forensic</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         511863 for the subject's code
+         Casework/Research Report 1 for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 511863 Casework/Research Report 1</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         511864 for the subject's code
+         Casework/Research Report 2 for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 511864 Casework/Research Report 2</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         505941 for the subject's code
+         Categorical Data & GLMs for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 505941 Categorical Data & GLMs</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         360812 for the subject's code
+         Chain Systems: Dynamics and Structure for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 360812 Chain Systems: Dynamics and Structure</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         740636 for the subject's code
+         Chamber Music (DMA)# for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 740636 Chamber Music (DMA)#</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         610671 for the subject's code
+         Chemistry Masters Research Project for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 610671 Chemistry Masters Research Project</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         610672 for the subject's code
+         Chemistry Masters Research Project for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 610672 Chemistry Masters Research Project</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         610673 for the subject's code
+         Chemistry Masters Research Project for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 610673 Chemistry Masters Research Project</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         610675 for the subject's code
+         Chemistry Masters Research Project for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 610675 Chemistry Masters Research Project</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         512928 for the subject's code
+         Child Clinical Placement 2A for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 512928 Child Clinical Placement 2A</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         512929 for the subject's code
+         Child Clinical Placement 2B for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 512929 Child Clinical Placement 2B</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         554610 for the subject's code
+         Child and Adolescent Psychiatry for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 554610 Child and Adolescent Psychiatry</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         196767 for the subject's code
+         Child and Family Social Work for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 196767 Child and Family Social Work</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         740514 for the subject's code
+         Choral Direction for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 740514 Choral Direction</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         107545 for the subject's code
+         Cinema Management Thesis for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 107545 Cinema Management Thesis</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         733556 for the subject's code
+         Climate Change Law for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 733556 Climate Change Law</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         208610 for the subject's code
+         Climate Change:Agric.Impacts&Adaptation for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 208610 Climate Change:Agric.Impacts&Adaptation</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         577873 for the subject's code
+         Clinical Audiology A for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 577873 Clinical Audiology A</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         577629 for the subject's code
+         Clinical Audiology B for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 577629 Clinical Audiology B</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         505938 for the subject's code
+         Clinical Biostatistics for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 505938 Clinical Biostatistics</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         571837 for the subject's code
+         Clinical Genetics for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 571837 Clinical Genetics</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         360778 for the subject's code
+         Clinical Immunisation Research for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 360778 Clinical Immunisation Research</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         360703 for the subject's code
+         Clinical Issues in Women's Health for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 360703 Clinical Issues in Women's Health</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         655803 for the subject's code
+         Clinical Management of Low Vision for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 655803 Clinical Management of Low Vision</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         360912 for the subject's code
+         Clinical Neuroscience Res. & Imaging for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 360912 Clinical Neuroscience Res. & Imaging</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         360843 for the subject's code
+         Clinical Neuroscience Research for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 360843 Clinical Neuroscience Research</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         512935 for the subject's code
+         Clinical Placement 2A for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 512935 Clinical Placement 2A</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         512936 for the subject's code
+         Clinical Placement 2B for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 512936 Clinical Placement 2B</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         571682 for the subject's code
+         Clinical Practice for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 571682 Clinical Practice</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         511737 for the subject's code
+         Clinical Practice in Specialty 1 for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 511737 Clinical Practice in Specialty 1</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<br><h2>Year: 2010 &nbsp; Summer Semester</h2><p><b>Subject: 207424 Buildings to Beans: Food in Cities</b></p>
+<table border='0'><tr><td></td><td>207424</td><td>L01/01  01st Feb</td><td>Monday</td><td>9:00am - 5:00pm</td><td>Burnley Campus-MB11</td><td>8 hours </td></tr><tr><td></td><td>207424</td><td>L02/01  02nd Feb</td><td>Tuesday</td><td>9:00am - 5:00pm</td><td>Burnley Campus-MB11</td><td>8 hours </td></tr><tr><td></td><td>207424</td><td>L03/01  03rd Feb</td><td>Wednesday</td><td>9:00am - 5:00pm</td><td>Burnley Campus-MB11</td><td>8 hours </td></tr><tr><td></td><td>207424</td><td>L04/01  04th Feb</td><td>Thursday</td><td>9:00am - 5:00pm</td><td>Burnley Campus-MB11</td><td>8 hours </td></tr><tr><td></td><td>207424</td><td>L05/01  05th Feb</td><td>Friday</td><td>9:00am - 5:00pm</td><td>Burnley Campus-MB11</td><td>8 hours </td></tr></table><br><br>
+<p><b>Subject: 325661 Brand Management</b></p>
+<table border='0'><tr><td></td><td>325661</td><td>L01/01  05th, 12th, 19th & 26 Jan, 09th Feb</td><td>Tuesday</td><td>10:00am - 1:00pm</td><td>Th:The Spot-Level 1 Lecture Theatre</td><td>3 hours </td></tr><tr><td></td><td>325661</td><td>L01/01  08th Feb</td><td>Monday</td><td>10:00am - 1:00pm</td><td>Th:200 Berkeley St-G73 Theatre</td><td>3 hours </td></tr><tr><td></td><td>325661</td><td>L02/01  07th, 14th, 21st & 28th Jan, 11th Feb</td><td>Thursday</td><td>10:00am - 1:00pm</td><td>Th:The Spot-Level 1 Lecture Theatre</td><td>3 hours </td></tr><tr><td></td><td>325661</td><td>L02/01  10th Feb</td><td>Wednesday</td><td>10:00am - 1:00pm</td><td>Th:ICT-Theatre 3</td><td>3 hours </td></tr></table><br><br>
+<h2>Year: 2010 &nbsp; Semester 1</h2><p><b>Subject: 106475 Business and Professional Communications</b></p>
+<table border='0'><tr><td></td><td>106475</td><td>W01/01</td><td>Wednesday</td><td>12:00pm - 2:00pm</td><td>Asia Centre-G07 (iMac Lab)</td><td>2 hours </td></tr><tr><td></td><td>106475</td><td>W01/02</td><td>Wednesday</td><td>5:15pm - 7:15pm</td><td>Asia Centre-G07 (iMac Lab)</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 121548 Climate Change Politics and Policy</b></p>
+<table border='0'><tr><td></td><td>121548</td><td>S01/01</td><td>Tuesday</td><td>6:15pm - 8:15pm</td><td>Th:221 Bouverie St-Theatre 1</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 121551 Civil Society, NGOs and the State</b></p>
+<table border='0'><tr><td></td><td>121551</td><td>L01/01</td><td>Monday</td><td>5:15pm - 6:15pm</td><td>Cussonia Court-Room 2</td><td>1 hour </td></tr><tr><td></td><td>121551</td><td>L01/01 Cover</td><td>Monday</td><td>5:15pm - 6:15pm</td><td>Old Arts-227  (Arts Seminar)</td><td>1 hour </td></tr><tr><td></td><td>121551</td><td>T01/01</td><td>Monday</td><td>6:15pm - 7:15pm</td><td>Babel-104</td><td>1 hour </td></tr><tr><td></td><td>121551</td><td>T01/01 Cover</td><td>Monday</td><td>6:15pm - 7:15pm</td><td>Old Arts-227  (Arts Seminar)</td><td>1 hour </td></tr><tr><td></td><td>121551</td><td>T01/02</td><td>Tuesday</td><td>5:15pm - 6:15pm</td><td>Babel-320</td><td>1 hour </td></tr></table><br><br>
+<p><b>Subject: 306490 Business and Information Technology</b></p>
+<table border='0'><tr><td></td><td>306490</td><td>S01/01</td><td>Wednesday</td><td>6:15pm - 9:15pm</td><td>Th:The Spot-Level 1 Lecture Theatre</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 306676 Business Risk Management</b></p>
+<table border='0'><tr><td></td><td>306676</td><td>S01/01</td><td>Monday</td><td>6:15pm - 9:15pm</td><td>The Spot-613/614</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 325661 Brand Management</b></p>
+<table border='0'><tr><td></td><td>325661</td><td>L01/01</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Th:Ec & Comm-G12 [Theatrette 2]</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 333632 Case Studies in Finance</b></p>
+<table border='0'><tr><td></td><td>333632</td><td>L01/01</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Th:Babel-305 [Chisholm Theatrette]</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 333665 Case Studies in Finance</b></p>
+<table border='0'><tr><td></td><td>333665</td><td>L01/01</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Th:Babel-305 [Chisholm Theatrette]</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 411694 Biology for Engineers</b></p>
+<table border='0'><tr><td></td><td>411694</td><td>L01/01  From 29th Mar</td><td>Monday</td><td>3:15pm - 4:15pm</td><td>Asia Centre-116</td><td>1 hour </td></tr><tr><td></td><td>411694</td><td>L01/01  Until 22nd Mar</td><td>Monday</td><td>3:15pm - 4:15pm</td><td>Th:Ec & Comm-Copland Theatre</td><td>1 hour </td></tr><tr><td></td><td>411694</td><td>L02/01  From 31st Mar</td><td>Wednesday</td><td>3:15pm - 4:15pm</td><td>Asia Centre-115</td><td>1 hour </td></tr><tr><td></td><td>411694</td><td>L02/01  Until 24th Mar</td><td>Wednesday</td><td>3:15pm - 4:15pm</td><td>Th:Ec & Comm-Copland Theatre</td><td>1 hour </td></tr><tr><td></td><td>411694</td><td>L03/01  From 16th Apr</td><td>Friday</td><td>3:15pm - 4:15pm</td><td>Asia Centre-114</td><td>1 hour </td></tr><tr><td></td><td>411694</td><td>L03/01  Until 26th Mar</td><td>Friday</td><td>3:15pm - 4:15pm</td><td>Th:Ec & Comm-Copland Theatre</td><td>1 hour </td></tr><tr><td></td><td>411694</td><td>P01/01  02nd & 16th Mar</td><td>Tuesday</td><td>2:00pm - 5:00pm</td><td> </td><td>3 hours </td></tr><tr><td></td><td>411694</td><td>P02/01  09th & 23rd Mar</td><td>Tuesday</td><td>2:00pm - 5:00pm</td><td> </td><td>3 hours </td></tr><tr><td></td><td>411694</td><td>T01/01</td><td>Friday</td><td>1:00pm - 2:00pm</td><td>Alice Hoy-333</td><td>1 hour </td></tr></table><br><br>
+<p><b>Subject: 421691 Biomedical Engineering</b></p>
+<table border='0'><tr><td></td><td>421691</td><td>L01/01</td><td>Wednesday</td><td>3:15pm - 5:15pm</td><td>Th:Doug McDonell-521 [Level 5 Theatrette]</td><td>2 hours </td></tr><tr><td></td><td>421691</td><td>L02/01</td><td>Thursday</td><td>3:15pm - 5:15pm</td><td>Th:Doug McDonell-309 [Denis Driscoll Theatrette]</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 431623 Broadband Networks</b></p>
+<table border='0'><tr><td></td><td>431623</td><td>L01/01</td><td>Thursday</td><td>2:15pm - 5:15pm</td><td>Th:Engineering-C2 Theatre</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 476892 Classroom Strategies:Gifted Education</b></p>
+<table border='0'><tr><td></td><td>476892</td><td>S01/01</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>234 Queensberry St-521   </td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 512921 Child Dev.Issues & Treatment Approaches</b></p>
+<table border='0'><tr><td></td><td>512921</td><td>S01/01</td><td>Thursday</td><td>11:00am - 1:00pm</td><td>Off Site,</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 512927 Child Psychopathology</b></p>
+<table border='0'><tr><td></td><td>512927</td><td>S01/01</td><td>Thursday</td><td>2:15pm - 4:15pm</td><td>Off Site,</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 513662 Cardiorespiratory Science</b></p>
+<table border='0'><tr><td></td><td>513662</td><td>L01/01</td><td>Tuesday</td><td>4:00pm - 7:00pm</td><td>200 Berkeley St-217 (PBL Room)</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 513688 Clinical Paediatric Physiotherapy</b></p>
+<table border='0'><tr><td></td><td>513688</td><td>L01/01  15th Feb</td><td>Monday</td><td>9:00am - 12:00pm</td><td>200 Berkeley St-220</td><td>3 hours </td></tr><tr><td></td><td>513688</td><td>L02/01  15th Feb</td><td>Monday</td><td>1:00pm - 5:00pm</td><td>200 Berkeley St-220</td><td>4 hours </td></tr><tr><td></td><td>513688</td><td>L03/01  16th Feb</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>200 Berkeley St-220</td><td>3 hours </td></tr><tr><td></td><td>513688</td><td>L04/01  16th Feb</td><td>Tuesday</td><td>1:00pm - 5:00pm</td><td>200 Berkeley St-220</td><td>4 hours </td></tr><tr><td></td><td>513688</td><td>L05/01  17th Feb</td><td>Wednesday</td><td>2:00pm - 5:00pm</td><td>200 Berkeley St-G79 (Seminar Room 1)   </td><td>3 hours </td></tr><tr><td></td><td>513688</td><td>L06/01  18th Feb</td><td>Thursday</td><td>2:00pm - 5:00pm</td><td>200 Berkeley St-220</td><td>3 hours </td></tr><tr><td></td><td>513688</td><td>L07/01  23rd Feb</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>200 Berkeley St-220</td><td>3 hours </td></tr><tr><td></td><td>513688</td><td>L08/01  23rd Feb</td><td>Tuesday</td><td>1:00pm - 5:00pm</td><td>200 Berkeley St-220</td><td>4 hours </td></tr></table><br><br>
+<p><b>Subject: 514762 Clients with Complex Health States</b></p>
+<table border='0'><tr><td></td><td>514762</td><td>L01/01</td><td>Monday</td><td>1:15pm - 4:15pm</td><td>Th:Arts Centre-Harold White Theatre</td><td>3 hours </td></tr><tr><td></td><td>514762</td><td>L02/01</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Th:234 Queensberry St-Public Policy Theatre   </td><td>3 hours </td></tr><tr><td></td><td>514762</td><td>P01/01</td><td>Tuesday</td><td>2:15pm - 4:15pm</td><td>234 Queensberry St-545 (Prince Henry Clinical Skills lab)</td><td>2 hours </td></tr><tr><td></td><td>514762</td><td>P01/02</td><td>Tuesday</td><td>4:15pm - 6:15pm</td><td>234 Queensberry St-545 (Prince Henry Clinical Skills lab)</td><td>2 hours </td></tr><tr><td></td><td>514762</td><td>P01/03</td><td>Tuesday</td><td>10:00am - 12:00pm</td><td>234 Queensberry St-545 (Prince Henry Clinical Skills lab)</td><td>2 hours </td></tr><tr><td></td><td>514762</td><td>P01/04</td><td>Tuesday</td><td>2:15pm - 4:15pm</td><td>234 Queensberry St-545 (Prince Henry Clinical Skills lab)</td><td>2 hours </td></tr><tr><td></td><td>514762</td><td>P01/05</td><td>Tuesday</td><td>4:15pm - 6:15pm</td><td>234 Queensberry St-545 (Prince Henry Clinical Skills lab)</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 514889 Cancer & Palliative Care Theory 1</b></p>
+<table border='0'><tr><td></td><td>514889</td><td>L01/01  24th Feb</td><td>Wednesday</td><td>9:00am - 4:00pm</td><td>Th:Peter MacCullum-Jack Brockhoff Lecture Theatre</td><td>7 hours </td></tr><tr><td></td><td>514889</td><td>L02/01</td><td>Wednesday</td><td>9:00am - 11:00am</td><td>Th:Peter MacCullum-Jack Brockhoff Lecture Theatre</td><td>2 hours </td></tr><tr><td></td><td>514889</td><td>L03/01  16th Mar, 20th Apr & 11th May</td><td>Tuesday</td><td>9:00am - 1:00pm</td><td>Th:Peter MacCullum-Jack Brockhoff Lecture Theatre</td><td>4 hours </td></tr></table><br><br>
+<p><b>Subject: 600607 Bioprocess Engineering</b></p>
+<table border='0'><tr><td></td><td>600607</td><td>L01/01</td><td>Monday</td><td>9:00am - 10:00am</td><td>Th:Medical-ESJ King Theatre</td><td>1 hour </td></tr><tr><td></td><td>600607</td><td>L02/01</td><td>Wednesday</td><td>3:15pm - 4:15pm</td><td>Th:Engineering-C1 Theatre</td><td>1 hour </td></tr><tr><td></td><td>600607</td><td>L03/01</td><td>Monday</td><td>3:15pm - 4:15pm</td><td>Th:Doug McDonell-Herbert Wilson Theatre</td><td>1 hour </td></tr><tr><td></td><td>600607</td><td>P01/01</td><td>Monday</td><td>12:15pm - 2:15pm</td><td>Microbiology-213 (Prac Room)</td><td>2 hours </td></tr><tr><td></td><td>600607</td><td>P01/02</td><td>Monday</td><td>12:15pm - 2:15pm</td><td>Microbiology-213 (Prac Room)</td><td>2 hours </td></tr><tr><td></td><td>600607</td><td>T01/01</td><td>Wednesday</td><td>10:00am - 11:00am</td><td>Alice Hoy-108</td><td>1 hour </td></tr><tr><td></td><td>600607</td><td>T01/02</td><td>Wednesday</td><td>11:00am - 12:00pm</td><td>Alice Hoy-108</td><td>1 hour </td></tr><tr><td></td><td>600607</td><td>T01/03</td><td>Friday</td><td>10:00am - 11:00am</td><td>221 Bouverie St-B113</td><td>1 hour </td></tr><tr><td></td><td>600607</td><td>T01/04</td><td>Friday</td><td>11:00am - 12:00pm</td><td>Alice Hoy-108</td><td>1 hour </td></tr></table><br><br>
+<p><b>Subject: 600621 Cases in Business Modelling</b></p>
+<table border='0'><tr><td></td><td>600621</td><td>W01/01  30th Mar to 11th May</td><td>Tuesday</td><td>1:15pm - 4:15pm</td><td>Melbourne Business School</td><td>3 hours </td></tr><tr><td></td><td>600621</td><td>W01/02  02nd Apr to 14th May</td><td>Friday</td><td>8:45am - 11:45am</td><td>Melbourne Business School</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 600622 Business Tools: The Market Environment</b></p>
+<table border='0'><tr><td></td><td>600622</td><td>W01/01  21st Apr to 26th May</td><td>Wednesday</td><td>5:30pm - 8:30pm</td><td>Melbourne Business School</td><td>3 hours </td></tr><tr><td></td><td>600622</td><td>W02/01  22nd Apr to 27th May</td><td>Thursday</td><td>2:00pm - 5:00pm</td><td>Melbourne Business School</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 610501 Chemistry 5A</b></p>
+<table border='0'><tr><td></td><td>610501</td><td>L01/01</td><td>Monday</td><td>11:00am - 12:00pm</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610501</td><td>L01/02</td><td>Monday</td><td>12:00pm - 1:00pm</td><td>Th:Chemistry-Cuming Theatre</td><td>1 hour </td></tr><tr><td></td><td>610501</td><td>L02/01</td><td>Tuesday</td><td>10:00am - 11:00am</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610501</td><td>L02/02</td><td>Tuesday</td><td>11:00am - 12:00pm</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610501</td><td>T01/01</td><td>Wednesday</td><td>10:00am - 11:00am</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610501</td><td>T01/02</td><td>Thursday</td><td>11:00am - 12:00pm</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr></table><br><br>
+<p><b>Subject: 610682 Chemistry 4A</b></p>
+<table border='0'><tr><td></td><td>610682</td><td>L01/01</td><td>Monday</td><td>11:00am - 12:00pm</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610682</td><td>L01/02</td><td>Monday</td><td>12:00pm - 1:00pm</td><td>Th:Chemistry-Cuming Theatre</td><td>1 hour </td></tr><tr><td></td><td>610682</td><td>L02/01</td><td>Tuesday</td><td>10:00am - 11:00am</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610682</td><td>L02/02</td><td>Tuesday</td><td>11:00am - 12:00pm</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610682</td><td>T01/01</td><td>Wednesday</td><td>10:00am - 11:00am</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610682</td><td>T01/02</td><td>Thursday</td><td>11:00am - 12:00pm</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr></table><br><br>
+<p><b>Subject: 615671 Business Applications & Architectures</b></p>
+<table border='0'><tr><td></td><td>615671</td><td>S01/01</td><td>Wednesday</td><td>5:30pm - 8:30pm</td><td>Th:Alan Gilbert-Theatre 4   </td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 615681 Business Analysis Modeling and Design</b></p>
+<table border='0'><tr><td></td><td>615681</td><td>S01/01</td><td>Thursday</td><td>5:30pm - 8:30pm</td><td>Th:ICT-Theatre 2</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 754804 Brokering Cross-Sectoral Partnerships</b></p>
+<table border='0'><tr><td></td><td>754804</td><td>S01/01 Brokering</td><td>Tuesday</td><td>3:30pm - 5:30pm</td><td>H CFI Tutorial Room</td><td>2 hours </td></tr></table><br><br>
+<h2>Year: 2010 &nbsp; Semester 2</h2><p><b>Subject: 100530 Budgets and Financial Management</b></p>
+<table border='0'><tr><td></td><td>100530</td><td>S01/01  27th Aug</td><td>Friday</td><td>9:00am - 4:00pm</td><td>Doug McDonell-619   </td><td>7 hours </td></tr><tr><td></td><td>100530</td><td>S02/01  04th Sep</td><td>Saturday</td><td>9:00am - 4:00pm</td><td>Doug McDonell-619   </td><td>7 hours </td></tr><tr><td></td><td>100530</td><td>S03/01  10th Sep</td><td>Friday</td><td>9:00am - 4:00pm</td><td>200 Berkeley St-G79 (Seminar Room 1)   </td><td>7 hours </td></tr><tr><td></td><td>100530</td><td>S04/01  18th Sep</td><td>Saturday</td><td>9:00am - 4:00pm</td><td>Doug McDonell-619   </td><td>7 hours </td></tr></table><br><br>
+<p><b>Subject: 166549 Business and Government</b></p>
+<table border='0'><tr><td></td><td>166549</td><td>S01/01</td><td>Tuesday</td><td>2:15pm - 4:15pm</td><td>234 Queensberry St-322</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 208744 Cereal, Legume and Oilseed Technology</b></p>
+<table border='0'><tr><td></td><td>208744</td><td>L01/01</td><td>Wednesday</td><td>11:00am - 12:00pm</td><td>Th:Botany-Turner Theatre</td><td>1 hour </td></tr><tr><td></td><td>208744</td><td>L02/01</td><td>Tuesday</td><td>10:00am - 12:00pm</td><td>Th:LFR-Lower Theatre</td><td>2 hours </td></tr><tr><td></td><td>208744</td><td>P01/02  17th, 24th, 31st Aug & 18th Oct</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>LFR-G29 (Teaching Lab South)</td><td>3 hours </td></tr><tr><td></td><td>208744</td><td>P02/02  18th, 25th Aug, 08th Sep & 19th Oct</td><td>Wednesday</td><td>2:15pm - 5:15pm</td><td>LFR-G29 (Teaching Lab South)</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 306490 Business and Information Technology</b></p>
+<table border='0'><tr><td></td><td>306490</td><td>S01/01</td><td>Wednesday</td><td>6:15pm - 9:15pm</td><td>Th:The Spot-Level 1 Lecture Theatre</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 306622 Business Intelligence</b></p>
+<table border='0'><tr><td></td><td>306622</td><td>S01/01</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Th:The Spot-Level 1 Lecture Theatre</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 306676 Business Risk Management</b></p>
+<table border='0'><tr><td></td><td>306676</td><td>S01/01</td><td>Monday</td><td>6:15pm - 9:15pm</td><td>The Spot-613/614</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 333632 Case Studies in Finance</b></p>
+<table border='0'><tr><td></td><td>333632</td><td>L01/01  02nd, 09th, 16th & 23rd Aug</td><td>Monday</td><td>1:15pm - 4:15pm</td><td>Th:Alan Gilbert-Theatre 3   </td><td>3 hours </td></tr><tr><td></td><td>333632</td><td>L01/02  02nd, 09th, 16th & 23rd Aug</td><td>Monday</td><td>6:15pm - 9:15pm</td><td>Th:Ec & Comm-Wood Theatre</td><td>3 hours </td></tr><tr><td></td><td>333632</td><td>L02/01  04th, 11th, 18th & 25th Aug</td><td>Wednesday</td><td>1:15pm - 4:15pm</td><td>Th:Alan Gilbert-Theatre 3   </td><td>3 hours </td></tr><tr><td></td><td>333632</td><td>L02/02  04th, 11th, 18th & 25th Aug</td><td>Wednesday</td><td>6:15pm - 9:15pm</td><td>Th:Ec & Comm-Wood Theatre</td><td>3 hours </td></tr><tr><td></td><td>333632</td><td>L03/01  06th, 13th, 20th & 27th Aug</td><td>Friday</td><td>1:15pm - 4:15pm</td><td>Th:Alan Gilbert-Theatre 3   </td><td>3 hours </td></tr><tr><td></td><td>333632</td><td>L03/02  06th, 13th, 20th & 27th Aug</td><td>Friday</td><td>6:15pm - 9:15pm</td><td>Th:Ec & Comm-Wood Theatre</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 333665 Case Studies in Finance</b></p>
+<table border='0'><tr><td></td><td>333665</td><td>L01/01  02nd, 09th, 16th & 23rd Aug</td><td>Monday</td><td>1:15pm - 4:15pm</td><td>Th:Alan Gilbert-Theatre 3   </td><td>3 hours </td></tr><tr><td></td><td>333665</td><td>L01/02  02nd, 09th, 16th & 23rd Aug</td><td>Monday</td><td>6:15pm - 9:15pm</td><td>Th:Ec & Comm-Wood Theatre</td><td>3 hours </td></tr><tr><td></td><td>333665</td><td>L02/01  04th, 11th, 18th & 25th Aug</td><td>Wednesday</td><td>1:15pm - 4:15pm</td><td>Th:Alan Gilbert-Theatre 3   </td><td>3 hours </td></tr><tr><td></td><td>333665</td><td>L02/02  04th, 11th, 18th & 25th Aug</td><td>Wednesday</td><td>6:15pm - 9:15pm</td><td>Th:Ec & Comm-Wood Theatre</td><td>3 hours </td></tr><tr><td></td><td>333665</td><td>L03/01  06th, 13th, 20th & 27th Aug</td><td>Friday</td><td>1:15pm - 4:15pm</td><td>Th:Alan Gilbert-Theatre 3   </td><td>3 hours </td></tr><tr><td></td><td>333665</td><td>L03/02  06th, 13th, 20th & 27th Aug</td><td>Friday</td><td>6:15pm - 9:15pm</td><td>Th:Ec & Comm-Wood Theatre</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 411652 Bionano Engineering</b></p>
+<table border='0'><tr><td></td><td>411652</td><td>L01/01</td><td>Monday</td><td>3:15pm - 4:15pm</td><td>Th:Richard Berry-JH Michell Theatre</td><td>1 hour </td></tr><tr><td></td><td>411652</td><td>L02/01</td><td>Tuesday</td><td>2:15pm - 3:15pm</td><td>Th:David Caro-Laby Theatre</td><td>1 hour </td></tr><tr><td></td><td>411652</td><td>L03/01</td><td>Thursday</td><td>1:00pm - 2:00pm</td><td>Th:Redmond Barry-Lyle Theatre</td><td>1 hour </td></tr><tr><td></td><td>411652</td><td>T01/01</td><td>Monday</td><td>4:15pm - 5:15pm</td><td>Alice Hoy-323</td><td>1 hour </td></tr><tr><td></td><td>411652</td><td>T01/02</td><td>Tuesday</td><td>3:15pm - 4:15pm</td><td>Redmond Barry-516</td><td>1 hour </td></tr><tr><td></td><td>411652</td><td>T01/03</td><td>Friday</td><td>2:15pm - 3:15pm</td><td>Alice Hoy-323</td><td>1 hour </td></tr><tr><td></td><td>411652</td><td>T01/04</td><td>Friday</td><td>9:00am - 10:00am</td><td>Alice Hoy-323</td><td>1 hour </td></tr><tr><td></td><td>411652</td><td>T01/05</td><td>Thursday</td><td>4:15pm - 5:15pm</td><td>Alice Hoy-108</td><td>1 hour </td></tr><tr><td></td><td>411652</td><td>T01/06</td><td>Friday</td><td>10:00am - 11:00am</td><td>Engineering D-310</td><td>1 hour </td></tr><tr><td></td><td>411652</td><td>T01/07</td><td>Friday</td><td>12:00pm - 1:00pm</td><td>Alice Hoy-323</td><td>1 hour </td></tr><tr><td></td><td>411652</td><td>T01/08</td><td>Thursday</td><td>11:00am - 12:00pm</td><td>Doug McDonell-512</td><td>1 hour </td></tr><tr><td></td><td>411652</td><td>T01/09</td><td>Thursday</td><td>12:00pm - 1:00pm</td><td>Doug McDonell-512</td><td>1 hour </td></tr></table><br><br>
+<p><b>Subject: 431637 Broadband Access Networks</b></p>
+<table border='0'><tr><td></td><td>431637</td><td>L01/01</td><td>Thursday</td><td>2:15pm - 5:15pm</td><td>Th:Alan Gilbert-Theatre 1</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 431673 Clinical Engineering</b></p>
+<table border='0'><tr><td></td><td>431673</td><td>L01/01</td><td>Tuesday</td><td>3:15pm - 6:15pm</td><td>Th:Chemistry-Senior Theatre</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 512916 Biological Psychology & Pharmacotherapy</b></p>
+<table border='0'><tr><td></td><td>512916</td><td>S01/01</td><td>Thursday</td><td>1:15pm - 2:45pm</td><td>Redmond Barry-1008</td><td>1.5 hours </td></tr></table><br><br>
+<p><b>Subject: 512974 Child Neuropsychological Disorders</b></p>
+<table border='0'><tr><td></td><td>512974</td><td>L01/01</td><td>Monday</td><td>10:00am - 11:30am</td><td>Off Site.</td><td>1.5 hours </td></tr></table><br><br>
+<p><b>Subject: 513672 Clinical Anatomy</b></p>
+<table border='0'><tr><td></td><td>513672</td><td>T01/01</td><td>Tuesday</td><td>10:30am - 12:30pm</td><td>200 Berkeley St-216 (PBL Room)</td><td>2 hours </td></tr><tr><td></td><td>513672</td><td>T01/02</td><td>Tuesday</td><td>10:30am - 12:30pm</td><td>200 Berkeley St-217 (PBL Room)</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 513682 Cardiorespiratory Rehabilitation</b></p>
+<table border='0'><tr><td></td><td>513682</td><td>P01/01  10th Sep</td><td>Friday</td><td>2:15pm - 5:15pm</td><td>200 Berkeley St-160 (Prac Room)</td><td>3 hours </td></tr><tr><td></td><td>513682</td><td>P02/01  14th Sep</td><td>Tuesday</td><td>2:15pm - 3:00pm</td><td>200 Berkeley St-160 (Prac Room)</td><td>0.75 hours </td></tr><tr><td></td><td>513682</td><td>P03/01  14th Sep</td><td>Tuesday</td><td>4:45pm - 6:00pm</td><td>200 Berkeley St-160 (Prac Room)</td><td>1.25 hours </td></tr><tr><td></td><td>513682</td><td>S01/01  07th Sep</td><td>Tuesday</td><td>2:15pm - 4:15pm</td><td>200 Berkeley St-G79 (Seminar Room 1)   </td><td>2 hours </td></tr><tr><td></td><td>513682</td><td>S02/01  09th Sep</td><td>Thursday</td><td>12:00pm - 6:00pm</td><td>200 Berkeley St-220</td><td>6 hours </td></tr><tr><td></td><td>513682</td><td>S03/01  14th Sep</td><td>Tuesday</td><td>12:00pm - 2:00pm</td><td>200 Berkeley St-220</td><td>2 hours </td></tr><tr><td></td><td>513682</td><td>S04/01  14th Sep</td><td>Tuesday</td><td>3:00pm - 4:30pm</td><td>200 Berkeley St-216 (PBL Room)</td><td>1.5 hours </td></tr><tr><td></td><td>513682</td><td>S05/01  16th Sep</td><td>Thursday</td><td>2:15pm - 5:15pm</td><td>200 Berkeley St-220</td><td>3 hours </td></tr><tr><td></td><td>513682</td><td>S06/01  17th Sep</td><td>Friday</td><td>12:00pm - 6:00pm</td><td>200 Berkeley St-220</td><td>6 hours </td></tr></table><br><br>
+<p><b>Subject: 514755 Clinical Inquiry & Nursing Research</b></p>
+<table border='0'><tr><td></td><td>514755</td><td>L01/01</td><td>Wednesday</td><td>1:15pm - 3:15pm</td><td>Th:200 Berkeley St-Physiotherapy Theatre</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 514757 Clients with Acute and Chronic Illness</b></p>
+<table border='0'><tr><td></td><td>514757</td><td>L01/01</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Th:Medical-ESJ King Theatre</td><td>3 hours </td></tr><tr><td></td><td>514757</td><td>P01/01</td><td>Thursday</td><td>1:15pm - 3:15pm</td><td>234 Queensberry St-545 (Prince Henry Clinical Skills lab)</td><td>2 hours </td></tr><tr><td></td><td>514757</td><td>P01/02</td><td>Thursday</td><td>1:15pm - 3:15pm</td><td>234 Queensberry St-546 (Queen Victoria Clinical Skills lab)</td><td>2 hours </td></tr><tr><td></td><td>514757</td><td>P01/03</td><td>Thursday</td><td>3:15pm - 5:15pm</td><td>234 Queensberry St-545 (Prince Henry Clinical Skills lab)</td><td>2 hours </td></tr><tr><td></td><td>514757</td><td>P01/04</td><td>Thursday</td><td>3:15pm - 5:15pm</td><td>234 Queensberry St-546 (Queen Victoria Clinical Skills lab)</td><td>2 hours </td></tr><tr><td></td><td>514757</td><td>P01/05</td><td>Friday</td><td>9:00am - 11:00am</td><td>234 Queensberry St-545 (Prince Henry Clinical Skills lab)</td><td>2 hours </td></tr><tr><td></td><td>514757</td><td>P01/06</td><td>Friday</td><td>9:00am - 11:00am</td><td>234 Queensberry St-546 (Queen Victoria Clinical Skills lab)</td><td>2 hours </td></tr><tr><td></td><td>514757</td><td>P01/07</td><td>Friday</td><td>11:00am - 1:00pm</td><td>234 Queensberry St-545 (Prince Henry Clinical Skills lab)</td><td>2 hours </td></tr><tr><td></td><td>514757</td><td>P01/08</td><td>Friday</td><td>11:00am - 1:00pm</td><td>234 Queensberry St-546 (Queen Victoria Clinical Skills lab)</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 514768 Cancer and Palliative Care Nursing</b></p>
+<table border='0'><tr><td></td><td>514768</td><td>L01/01  04th Oct</td><td>Monday</td><td>9:00am - 1:00pm</td><td>Th:234 Queensberry St-Public Policy Theatre   </td><td>4 hours </td></tr><tr><td></td><td>514768</td><td>L02/01  05th Oct</td><td>Tuesday</td><td>9:00am - 1:00pm</td><td>Th:234 Queensberry St-Public Policy Theatre   </td><td>4 hours </td></tr><tr><td></td><td>514768</td><td>L03/01</td><td>Wednesday</td><td>1:15pm - 5:15pm</td><td>234 Queensberry St-G05   </td><td>4 hours </td></tr><tr><td></td><td>514768</td><td>L04/01  07th Oct</td><td>Thursday</td><td>1:00pm - 5:00pm</td><td>234 Queensberry St-521   </td><td>4 hours </td></tr><tr><td></td><td>514768</td><td>L05/01</td><td>Friday</td><td>1:15pm - 3:15pm</td><td>234 Queensberry St-419</td><td>2 hours </td></tr><tr><td></td><td>514768</td><td>P01/01  04th Oct</td><td>Monday</td><td>2:15pm - 9:15pm</td><td>Th:234 Queensberry St-Public Policy Theatre   </td><td>7 hours </td></tr><tr><td></td><td>514768</td><td>P02/01</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Th:234 Queensberry St-Public Policy Theatre   </td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 514891 Cancer & Palliative Care Theory 2</b></p>
+<table border='0'><tr><td></td><td>514891</td><td>L01/01</td><td>Wednesday</td><td>9:00am - 1:00pm</td><td>Th:Peter MacCullum-Jack Brockhoff Lecture Theatre</td><td>4 hours </td></tr></table><br><br>
+<p><b>Subject: 600614 Business Tools: Money People & Processes</b></p>
+<table border='0'><tr><td></td><td>600614</td><td>S01/01  23rd, 30th Sep, 07th, 14th, 21st & 28th Oct</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Melbourne Business School-CUB Theatre</td><td>3 hours </td></tr><tr><td></td><td>600614</td><td>S02/01  24th Sep, 01st, 08th, 15th, 22nd & 29th Oct</td><td>Friday</td><td>2:15pm - 5:15pm</td><td>Melbourne Business School-CUB Theatre</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 610502 Chemistry 5B</b></p>
+<table border='0'><tr><td></td><td>610502</td><td>L01/01</td><td>Monday</td><td>9:00am - 10:00am</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610502</td><td>L01/02</td><td>Monday</td><td>11:00am - 12:00pm</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610502</td><td>L01/03</td><td>Tuesday</td><td>9:00am - 10:00am</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610502</td><td>L02/01</td><td>Tuesday</td><td>10:00am - 11:00am</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610502</td><td>L02/02</td><td>Wednesday</td><td>9:00am - 10:00am</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610502</td><td>L02/03</td><td>Wednesday</td><td>10:00am - 11:00am</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610502</td><td>L03/01</td><td>Wednesday</td><td>11:00am - 12:00pm</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610502</td><td>L03/02</td><td>Thursday</td><td>9:00am - 10:00am</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610502</td><td>L03/03</td><td>Thursday</td><td>10:00am - 11:00am</td><td>Th:Chemistry-Cuming Theatre</td><td>1 hour </td></tr><tr><td></td><td>610502</td><td>L04/01</td><td>Thursday</td><td>11:00am - 12:00pm</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610502</td><td>L04/02</td><td>Friday</td><td>10:00am - 11:00am</td><td>Th:Chemistry-Cuming Theatre</td><td>1 hour </td></tr><tr><td></td><td>610502</td><td>L04/03</td><td>Friday</td><td>11:00am - 12:00pm</td><td>Th:Chemistry-Cuming Theatre</td><td>1 hour </td></tr><tr><td></td><td>610502</td><td>T01/01</td><td>Wednesday</td><td>9:00am - 10:00am</td><td>Th:Chemistry-Cuming Theatre</td><td>1 hour </td></tr><tr><td></td><td>610502</td><td>T01/02</td><td>Thursday</td><td>11:00am - 12:00pm</td><td>Th:Chemistry-Cuming Theatre</td><td>1 hour </td></tr><tr><td></td><td>610502</td><td>T01/03</td><td>Thursday</td><td>12:00pm - 1:00pm</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr></table><br><br>
+<p><b>Subject: 610683 Chemistry 4B</b></p>
+<table border='0'><tr><td></td><td>610683</td><td>L01/01</td><td>Monday</td><td>9:00am - 10:00am</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610683</td><td>L01/02</td><td>Monday</td><td>11:00am - 12:00pm</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610683</td><td>L01/03</td><td>Tuesday</td><td>9:00am - 10:00am</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610683</td><td>L02/01</td><td>Tuesday</td><td>10:00am - 11:00am</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610683</td><td>L02/02</td><td>Wednesday</td><td>9:00am - 10:00am</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610683</td><td>L02/03</td><td>Wednesday</td><td>10:00am - 11:00am</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610683</td><td>L03/01</td><td>Wednesday</td><td>11:00am - 12:00pm</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610683</td><td>L03/02</td><td>Thursday</td><td>9:00am - 10:00am</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610683</td><td>L03/03</td><td>Thursday</td><td>10:00am - 11:00am</td><td>Th:Chemistry-Cuming Theatre</td><td>1 hour </td></tr><tr><td></td><td>610683</td><td>L04/01</td><td>Thursday</td><td>11:00am - 12:00pm</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr><tr><td></td><td>610683</td><td>L04/02</td><td>Friday</td><td>10:00am - 11:00am</td><td>Th:Chemistry-Cuming Theatre</td><td>1 hour </td></tr><tr><td></td><td>610683</td><td>L04/03</td><td>Friday</td><td>11:00am - 12:00pm</td><td>Th:Chemistry-Cuming Theatre</td><td>1 hour </td></tr><tr><td></td><td>610683</td><td>T01/01</td><td>Wednesday</td><td>9:00am - 10:00am</td><td>Th:Chemistry-Cuming Theatre</td><td>1 hour </td></tr><tr><td></td><td>610683</td><td>T01/02</td><td>Thursday</td><td>11:00am - 12:00pm</td><td>Th:Chemistry-Cuming Theatre</td><td>1 hour </td></tr><tr><td></td><td>610683</td><td>T01/03</td><td>Thursday</td><td>12:00pm - 1:00pm</td><td>Th:Chemistry-Senior Theatre</td><td>1 hour </td></tr></table><br><br>
+<p><b>Subject: 615655 Business to Business Electronic Commerce</b></p>
+<table border='0'><tr><td></td><td>615655</td><td>L01/01</td><td>Wednesday</td><td>2:15pm - 5:15pm</td><td>Th:Alan Gilbert-Theatre 1</td><td>3 hours </td></tr><tr><td></td><td>615655</td><td>W01/01</td><td>Thursday</td><td>2:15pm - 5:15pm</td><td>ICT-230 (Teach Lab )</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 615681 Business Analysis Modeling and Design</b></p>
+<table border='0'><tr><td></td><td>615681</td><td>S01/01</td><td>Wednesday</td><td>5:30pm - 8:30pm</td><td>Th:Alan Gilbert-Theatre 4   </td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 625634 Climate Affairs</b></p>
+<table border='0'><tr><td></td><td>625634</td><td>L01/01</td><td>Friday</td><td>12:00pm - 2:00pm</td><td>McCoy-218 (Gregory Lab)</td><td>2 hours </td></tr><tr><td></td><td>625634</td><td>T01/01</td><td>Friday</td><td>10:00am - 12:00pm</td><td>McCoy-220 (Hills Lab)</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 702511 Building Sustainability</b></p>
+<table border='0'><tr><td></td><td>702511</td><td>L01/01  20th Sep</td><td>Monday</td><td>9:00am - 5:00pm</td><td>Th:Old Geology-Theatre 1</td><td>8 hours </td></tr><tr><td></td><td>702511</td><td>L02/01  21st Sep</td><td>Tuesday</td><td>9:00am - 5:00pm</td><td>Th:Old Geology-Theatre 1</td><td>8 hours </td></tr><tr><td></td><td>702511</td><td>L03/01  22nd Sep</td><td>Wednesday</td><td>9:00am - 5:00pm</td><td>Th:Old Geology-Theatre 1</td><td>8 hours </td></tr><tr><td></td><td>702511</td><td>L04/01  23rd Sep</td><td>Thursday</td><td>9:00am - 5:00pm</td><td>Th:Old Geology-Theatre 1</td><td>8 hours </td></tr><tr><td></td><td>702511</td><td>L05/01  24th Sep</td><td>Friday</td><td>9:00am - 5:00pm</td><td>Th:Old Geology-Theatre 1</td><td>8 hours </td></tr></table><br><br>
+<p><b>Subject: 702554 City Lights: Cities, Culture and History</b></p>
+<table border='0'><tr><td></td><td>702554</td><td>S01/01</td><td>Monday</td><td>2:00pm - 5:00pm</td><td>Architecture-303 [Australian Gypsum Room]</td><td>3 hours </td></tr></table><br><br>
+<h2>Year: 2010 &nbsp; Year Long</h2><p><b>Subject: 512971 Clinical Neuropsychology Placement 1#</b></p>
+<table border='0'><tr><td></td><td>512971</td><td>CP1/01</td><td>Thursday</td><td>8:30am - 10:30am</td><td>Th:Architecture-103 (eZone)</td><td>2 hours </td></tr></table><br><br>
+<p></p><hr>
+<p><strong><a href="http://www.studentadmin.unimelb.edu.au/leclist.html" target="_blank">Lecture 
+  Theatre Location List</strong></a></p>
+
+
+</DIV>
+</td>
+</tr>
+</table>
+</div>
+<!-- END MIDDLE SECTION -->
+<!-- START BOTTOM SECTION -->
+	<table width="100%" cellpadding="0" cellspacing="0" border="0" summary="This table contains links to University 
+		contact details and copyright, disclaimer, privacy and accessibility information.">
+		<tr>
+			<!-- Start c_footbar.html include v20042004 -->
+			<td class="customfootbar" nowrap="nowrap"> <p id="brandingbar">
+				<a href="http://www.studentadmin.unimelb.edu.au/contactus.html">Contact us</a></p></td>
+			<!-- End c_footbar.html include -->
+			<!-- Start g_subsite_footbar_rhs.html include v20042004 -->
+			<td class="footbar" nowrap="nowrap"> <p id="contactbar"><a href="http://www.unimelb.edu.au/contact/index.html" 
+				accesskey="o" title="How to contact the University of Melbourne">Contact the University</a> : 
+				<a href="http://www.unimelb.edu.au/disclaimer/" accesskey="d" title="Caution notice and copyright notice">Disclaimer 
+				& Copyright</a> : <a href="http://www.unimelb.edu.au/disclaimer/privacy.html" accesskey="p" 
+				title="Privacy for students and staff, freedom of information">Privacy</a>: 
+				<a href="http://www.unimelb.edu.au/accessibility/" accesskey="a" 
+				title="Accessibility features of the website">Accessibility</a></p></td>
+			<!-- End g_subsite_footbar_rhs.html include -->
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0" summary="This table contains contact details and 
+		information about this page.">
+		<tr>
+			<td id="author" class="footer"><p> 
+				Date Created: <!-- InstanceBeginEditable name="Date Created" -->28 June 2006<!-- InstanceEndEditable --><br />
+				Last Modified: <!-- InstanceBeginEditable name="Last Modified" -->19 October 2009 11:35:00<!-- InstanceEndEditable --> <br />
+				Authorised By: <!-- InstanceBeginEditable name="Authoriser" -->Director, Student Management Services<!-- InstanceEndEditable --><br />
+				Maintainer: <!-- InstanceBeginEditable name="Maintainer" -->Student Management Services<!-- InstanceEndEditable --><br />
+				<strong>Help:</strong> <!-- InstanceBeginEditable name="Email" -->for <a href="http://www.services.unimelb.edu.au/StudentCentre/centre/contact.html">Current Students</a> 
+						or for <a href="http://www.futurestudents.unimelb.edu.au/about/contact.html">Future Students</a><!-- InstanceEndEditable --> </p></td>
+			<td id="legal" class="footer">
+				<!-- Start g_footer.html include v20042004 -->
+				<p> The University of Melbourne <acronym title="Australian Business Number">ABN</acronym>: 84 002 705 224<br />
+					<acronym title="Commonwealth Register of Institutions and Courses for Overseas Students">CRICOS</acronym> Provider Number: 
+					00116K ( <a href="http://www.services.unimelb.edu.au/international/visas/index.html" accesskey="i" 
+					title="Information about student visas, work visas, extensions and course transfers">More information</a> )<br />
+					<a href="http://www.futurestudents.unimelb.edu.au/" accesskey="e" title="Course enquiries, admissions, course search, 
+					courses and programs">Course Enquiries</a><br /></p>
+				<!-- End g_footer.html include -->
+				<!-- InstanceBeginEditable name="footer extras" -->
+				<!-- Include file temporarily disabled -->
+				<!-- include virtual="/template-assets/includes/c_footer_extras.inc" -->
+				<!-- InstanceEndEditable -->
+			</td>
+		</tr>
+	</table>
+<!-- END BOTTOM SECTION -->
+</body>
+<!-- TemplateEnd -->
+
+<!-- InstanceEnd -->
+</html>

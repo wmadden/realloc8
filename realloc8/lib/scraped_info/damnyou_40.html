@@ -1,0 +1,818 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/2000/REC-xhtml1-20000126/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><!-- InstanceBegin template="/Templates/studentadmin_home.dwt" codeOutsideHTMLIsLocked="false" --><head>	<!-- InstanceBeginEditable name="doctitle" -->	<title>SIS - Student Information System : The University of Melbourne</title>	<!-- InstanceEndEditable -->	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />	<!-- InstanceBeginEditable name="head" -->	<meta name="DC.Title" content="Student Information System" />	<meta name="DC.Creator" content="Student Management Systems" />	<meta name="UM.Creator.Email" content="sa-sishelp2@unimelb.edu.au" />	<meta name="DC.Subject" content="Student Information System" />	<meta name="Keywords" content="Student, Students, Services, Service, Information, Administration, University" />	<meta name="DC.Description" content="Student Information System" />	<meta name="Description" content="Student Information System" />	<meta name="DC.Publisher" content="Student Management Systems" />	<meta name="DC.Contributor" content="Student Management Systems" />	<meta name="DC.Date" scheme="ISO 8601" content="2006-06-28" />	<meta name="UM.Date.ReviewDue" scheme="ISO 8601" content="2007-06-28" />	<meta name="UM.Authoriser.Name" content="Katherine Ciacia" />	<meta name="UM.Authoriser.Title" content="Manager, Student Management Systems" />	<meta name="UM.Maintainer.Name" content="" />	<meta name="UM.Maintainer.Department" content="Student Management Systems" />	<meta name="UM.Maintainer.Email" content="sa-sishelp2@unimelb.edu.au" />	<meta name="DC.Language" scheme="RFC 1766" content="en" />	<!-- InstanceEndEditable -->	<meta name="DC.Rights" content="http://www.unimelb.edu.au/disclaimer/" />	<meta name="DC.Format" scheme="IMT" content="text/html" />	<meta name="DC.Identifier" content="https://sis.unimelb.edu.au/" />	<meta name="DC.Date.Modified" scheme="ISO 8601" content="2006-06-28" />	<!-- START STYLE SHEET REFERENCES - DO NOT DELETE THE FOLLOWING TAG -->	<link rel="stylesheet" href="/template-assets/styles/basic.css" type="text/css" media="screen"/>	<link rel="stylesheet" href="/template-assets-custom/styles/basic.css" type="text/css" media="screen"/>	<link rel="stylesheet" href="/template-assets/styles/print.css" type="text/css" media="print" />	<style type="text/css" media="screen">		<!--		    @import url("/template-assets/styles/compliant.css");			@import url("/template-assets-custom/styles/compliant.css");		-->	</style>	<script language="JavaScript" type="text/javascript" src="/template-assets/js/scripts.js"></script>	<script language="JavaScript" type="text/javascript" src="/template-assets/js/menu.js"></script>	<!-- InstanceBeginEditable name="styles" -->	<script language="JavaScript" type="text/javascript">		<!-- hide from old browsers		// The folowing variable can be used to define a parent for pages below the 3rd level of the menu		// var menuParent = "/aboutus/";		// -->	</script>	<!-- InstanceEndEditable -->	<script language="JavaScript" type="text/javascript">		<!-- hide from old browsers			function start(){ menuSet(); if (window.customStart) { customStart(); }}		// -->	</script>		<!-- END STYLE SHEET REFERENCE -->	<!-- The following Dreamweaver parameters set the visibility of the RHS image-->	<!-- Use Modify - Template Properties to change the value -->	<!-- InstanceParam name="side image" type="boolean" value="true" -->	<!-- InstanceParam name="layout" type="number" value="1" --></head><body onload="start() ; window.opener.refresh()">	<div id="top">		<table border="0" width="100%" cellspacing="0" cellpadding="0" summary="This table contains the University branding bar and 			includes links to the top levels of the website, the University logo and the input box for the University search engine.">			<tr>				<td rowspan="3" width="135" class="logocell" valign="bottom">					<!-- Start c_logo.html include v20042004 -->					<table width="135" border="0" cellpadding="0" cellspacing="0" summary="This table contains the University logo 						and link to the University homepage.">						<tr>							<td id="customlogo"><a href="http://www.unimelb.edu.au/"><img 								src="/template-assets-custom/images/custom_logo_crest_comb.gif" width="135" height="121" border="0" 								alt="The University of Melbourne [logo]" hspace="0" vspace="0" align="bottom" /></a></td>						</tr>					</table>					<!-- End c_logo.html include -->				</td>				<td class="topnavcell" nowrap="nowrap" valign="bottom"> <a href="#content" accesskey="c" 					title="Skip past navigation to main part of page"><img src="/template-assets/images/navbar_curve22.gif" 					align="top" hspace="0" vspace="0" border="0" width="55" height="22" alt="Skip past navigation to main part of page" /></a>				</td>				<td class="topnavcell" nowrap="nowrap">					<!-- Start g_uni_menu_dropdown.html include v20042004 -->					<form method="get" action="http://www.unimelb.edu.au/cgi-bin/nph-redirect.pl" name="linksform" id="linksform">						<table cellpadding="0" cellspacing="2" border="0" align="left" summary="This table contains the dropdown box for 							University links.">							<tr>								<td class="topnavcell" nowrap="nowrap"><label for="url"><span class="topnavlabel">Uni Links: </span></label></td>								<td class="topnavcell" nowrap="nowrap">									<select class="dropdown" name="url" id="url" 										onchange="linksform.action=url[url.selectedIndex].value;linksform.submit();">										<option selected="selected" value="http://www.unimelb.edu.au/">University Homepage</option>										<option value="http://www.unimelb.edu.au/about/">About the University</option>										<option value="http://www.unimelb.edu.au/student/">Students</option>										<option value="http://www.unimelb.edu.au/ExtRels/research/">Research</option>										<option value="http://www.unimelb.edu.au/community/">Community</option>										<option value="http://uninews.unimelb.edu.au/">News</option>										<option value="http://events.unimelb.edu.au/">Events</option>										<option value="http://www.unimelb.edu.au/az/faculties.html">Faculties</option>										<option value="http://www.unimelb.edu.au/az/index.html">A-Z Directory</option>										<option value="http://www.lib.unimelb.edu.au/">Library</option>									</select>								</td>								<td><input type="image" class="linksbtn" name="Go" value="Go!" src="/template-assets/images/btn_go_top.gif" 									style="display:block;" accesskey="g" alt="Go" /></td>							</tr>						</table>					</form>					<!-- End g_uni_menu_dropdown.html include -->				</td>				<td class="topnavcell" nowrap="nowrap" align="right">					<!-- Start g_search_labelled.html include v20042004 -->					<form method="get" action="http://websearch.its.unimelb.edu.au/query.html" name="searchform" id="searchform">						<input type="hidden" name="qp" value="" />						<input type="hidden" name="col" value="unimelb" />						<input type="hidden" name="ht" value="0" />						<input type="hidden" name="qs" value="" />						<input type="hidden" name="qc" value="" />						<input type="hidden" name="pw" value="100%" />						<input type="hidden" name="ws" value="0" />						<input type="hidden" name="qm" value="0" />						<input type="hidden" name="st" value="1" />						<input type="hidden" name="nh" value="25" />						<input type="hidden" name="lk" value="1" />						<input type="hidden" name="rf" value="0" />						<input type="hidden" name="rq" value="0" />						<input type="hidden" name="si" value="1" />						<table cellpadding="0" cellspacing="2" border="0" align="right" summary="This table contains the input box for the 							University search engine.">							<tr>								<td class="topnavcell" valign="middle" nowrap="nowrap"> <label for="searchtext"><span 									class="topnavlabel">Uni Search: </span></label></td>								<td class="topnavcell" nowrap="nowrap"> <input class="searchtext" id="searchtext" 									style="height:15px;border:solid 1px #7898b5;" type="text" name="qt" value=" University site search" 									size="24" accesskey="s" onfocus="focusField(this, ' University site search')" 									onblur="blurField(this, ' University site search')" /></td>								<td valign="middle"> <input type="image" name="Search" value="Search" 									src="/template-assets/images/btn_search_top.gif" style="display:block;" accesskey="s" alt="Search" /></td>							</tr>						</table>					</form>					<!-- End g_search_labelled.html include -->				</td>			</tr>			<tr>				<td height="70" width="55">&nbsp;</td>				<td colspan="2" width="99%" valign="middle" class="banner">					<!-- SELECT THE SSI FILE TO SUIT THE LAYOUT OF THE BRANDING SPACE -->					<!-- InstanceBeginEditable name="brandingspace" -->					<!-- Start c_branding_space.html include v20042004 -->					<img align="right" src="/template-assets-custom/images/globalimage.gif" alt="branding image" width="200" height="70" />					<h1><a href="/">Student Information System</a></h1>					<!-- End c_branding_space.html include -->					<!-- InstanceEndEditable --> </td>			</tr>			<tr valign="top">				<td class="customsecondnavfill" height="29" colspan="3">					<!-- Start c_quick_links.html include v20042004 -->					<table cellpadding="0" cellspacing="0" border="0" align="right" summary="This table contains links to the top 						levels on the University website.">						<tr>							<td> <img src="/template-assets/images/grey_nav_curve.gif" alt="" width="50" height="29" hspace="0" 								vspace="0" border="0" align="left" /></td>							<td class="secondnav"><a href="http://www.studentadmin.unimelb.edu.au/leclist.html">Lecture Theatres</a> : 								<a href="http://www.studentadmin.unimelb.edu.au/dictionary.html">Dictionary</a> : 								<a href="http://www.unimelb.edu.au/az/faculties.html">Faculties</a> : 								<a href="http://www.unimelb.edu.au/az/index.html">A-Z Directory</a> : 								<a href="http://studentadmin-unimelb.custhelp.com/cgi-bin/studentadmin_unimelb.cfg/php/enduser/ask.php" title="Contact Student Admin Help Desk">Help</a>							</td>						</tr>					</table>					<!-- End c_quick_links.html include -->				</td>			</tr>		</table>	</div>	<div class="printonly"> <img src="/template-assets/images/logo_print.gif" alt="" />	</div><!-- START MIDDLE SECTION -->	<div id="midsection">		<table class="gridtable" cellpadding="0" cellspacing="0" border="0" summary="This table contains the main content of the page.">			<tr>				<td valign="top">
+<DIV name="portal_keep">
+ <p>
+<H3><font color="#0000FF">2010 Subject Timetable</font></H3>
+
+<font size="-1">
+
+<p><b>2010 Timetable</b><br>
+Released: 5th November 2009</p>
+  Last Updated: 
+<div id='LastModified2010'>Tue 02/02/2010 18:12:39  </div>
+  <br>
+  Status: Final
+  
+<p><b>2009 Timetable</b> Released: 15 September, 2008, Status: Final<br>
+  Last Updated: Thu 15/10/2009 19:15:21  </p>
+ 
+<P><font size="-1"><a href="http://sis.unimelb.edu.au/cgi-bin/subjects.pl/">View 
+  Timetable</a> </font></p>
+<p><strong>To understand your timetable, please note:</strong></p>
+   
+<table border="1">
+<tr><td>L = Lecture</td></tr>
+<tr><td>P = Practical</td></tr>
+<tr><td>S = Seminar</td></tr>
+<tr><td>T = Tutorial </td></tr>
+
+<tr><td>W = Workshop</td></tr>
+<tr><td>PB = Problem-based </td></tr>
+<tr><td>FW = Field Work </td></tr>
+<tr><td>CL = Clinical Laboratory </td></tr>
+<tr><td>CP = Clinical Placement </td></tr>
+<tr><td>CR = Clinical Practice </td></tr>
+<tr><td>CC = Concert Class </td></tr>
+<tr><td>IC = Instrument Class </td></tr>
+<tr><td>RH = Rehearsal </td></tr>
+
+<tr><td>SC = Screening </td></tr>
+<tr><td>ST = Studio </td></tr>
+</table>
+<ul>
+  <li> The letter indicates the type of activity (see legend above) 
+  <li> The first number indicates which activity it is, <strong>eg.</strong><br>
+    L1 stands for the first weekly lecture for the subject<br>
+    L2 stands for the second weekly lecture for the subject<br>
+    P1 stands for the first weekly practical session for the subject, etc. 
+  <li> The second number (after the slash) indicates the different streams or 
+    repeats available for that activity. You only need to attend one stream for 
+    each activity, <strong>eg.</strong><br>
+    L1/01 stands for Lecture 1, Stream 1<br>
+    L1/02 stands for Lecture 1, Stream 2, etc. 
+</ul>
+<hr>  
+</font>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         460697 for the subject's code
+         Managing Tertiary Education Enterprises for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 460697 Managing Tertiary Education Enterprises</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         482898 for the subject's code
+         Managing The Educational Organisation for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 482898 Managing The Educational Organisation</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         333685 for the subject's code
+         Marketing Financial Analysis and Control for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 333685 Marketing Financial Analysis and Control</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         360715 for the subject's code
+         Marketing for Managers for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 360715 Marketing for Managers</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         740637 for the subject's code
+         Masterclass (DMA) # for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 740637 Masterclass (DMA) #</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         460687 for the subject's code
+         Materials Development and Review for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 460687 Materials Development and Review</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         620644 for the subject's code
+         Mathematical Biology for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 620644 Mathematical Biology</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         505105 for the subject's code
+         Mathematics B'Ground for Biostatistics for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 505105 Mathematics B'Ground for Biostatistics</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         460804 for the subject's code
+         Mathematics Curriculum & Assessment for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 460804 Mathematics Curriculum & Assessment</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         300673 for the subject's code
+         Mathematics of Finance I for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 300673 Mathematics of Finance I</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         300674 for the subject's code
+         Mathematics of Finance II for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 300674 Mathematics of Finance II</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         300675 for the subject's code
+         Mathematics of Finance III for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 300675 Mathematics of Finance III</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         460770 for the subject's code
+         Mathematics: Improving Learning for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 460770 Mathematics: Improving Learning</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         460772 for the subject's code
+         Mathematics: Modelling & Problem Solving for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 460772 Mathematics: Modelling & Problem Solving</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         460771 for the subject's code
+         Mathematics: Quality Teaching for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 460771 Mathematics: Quality Teaching</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         460769 for the subject's code
+         Mathematics: Teaching with Technology for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 460769 Mathematics: Teaching with Technology</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         571819 for the subject's code
+         Mental Health and Young People for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 571819 Mental Health and Young People</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         554878 for the subject's code
+         Mental Illness and Young People II for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 554878 Mental Illness and Young People II</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         554826 for the subject's code
+         Mental Illness in Young People for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 554826 Mental Illness in Young People</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         625662 for the subject's code
+         Mesoscale Atmospheric Dynamics for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 625662 Mesoscale Atmospheric Dynamics</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         600650 for the subject's code
+         Metabolomics and Proteomics for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 600650 Metabolomics and Proteomics</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         505511 for the subject's code
+         Methods for Evaluating Health Services 1 for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 505511 Methods for Evaluating Health Services 1</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         250646 for the subject's code
+         Microbiology & Serology: disease control for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 250646 Microbiology & Serology: disease control</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         460627 for the subject's code
+         Minor Project in Education for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 460627 Minor Project in Education</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         460628 for the subject's code
+         Minor Project in Education 2 for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 460628 Minor Project in Education 2</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         433699 for the subject's code
+         Minor Research Project for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 433699 Minor Research Project</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         615690 for the subject's code
+         Minor Research Project in IS for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 615690 Minor Research Project in IS</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         740607 for the subject's code
+         Minor Thesis for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 740607 Minor Thesis</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         360716 for the subject's code
+         Minor Thesis (25 points) for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 360716 Minor Thesis (25 points)</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         360752 for the subject's code
+         Minor Thesis (25) for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 360752 Minor Thesis (25)</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         360753 for the subject's code
+         Minor Thesis (37.5) for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 360753 Minor Thesis (37.5)</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         555606 for the subject's code
+         Minor Thesis (Radiology)# for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 555606 Minor Thesis (Radiology)#</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         175516 for the subject's code
+         Minor Thesis - Applied Linguistics for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 175516 Minor Thesis - Applied Linguistics</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         107525 for the subject's code
+         Minor Thesis - Art Curatorship for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 107525 Minor Thesis - Art Curatorship</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         760554 for the subject's code
+         Minor Thesis - Arts Management for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 760554 Minor Thesis - Arts Management</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         110589 for the subject's code
+         Minor Thesis - Asian Studies for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 110589 Minor Thesis - Asian Studies</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         108544 for the subject's code
+         Minor Thesis - Conservation for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 108544 Minor Thesis - Conservation</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         760553 for the subject's code
+         Minor Thesis - Creative Writing for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 760553 Minor Thesis - Creative Writing</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         191528 for the subject's code
+         Minor Thesis - Criminology for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 191528 Minor Thesis - Criminology</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         121547 for the subject's code
+         Minor Thesis - Development Studies for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 121547 Minor Thesis - Development Studies</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         131520 for the subject's code
+         Minor Thesis - Gender and Development for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 131520 Minor Thesis - Gender and Development</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         505931 for the subject's code
+         Minor Thesis - Master of Epidemiology for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 505931 Minor Thesis - Master of Epidemiology</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         100578 for the subject's code
+         Minor Thesis - Media & Communications for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 100578 Minor Thesis - Media & Communications</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         166517 for the subject's code
+         Minor Thesis - Public /Social Policy for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 166517 Minor Thesis - Public /Social Policy</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         511741 for the subject's code
+         Minor Thesis 1 for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 511741 Minor Thesis 1</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         511742 for the subject's code
+         Minor Thesis 2 for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 511742 Minor Thesis 2</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         511751 for the subject's code
+         Minor Thesis 3 for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 511751 Minor Thesis 3</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<!-- This is for exact (6 digit) subject codes that produced no timetable.
+     Will substitute:
+         511752 for the subject's code
+         Minor Thesis 4 for the subject's name
+          for the subject's department name -->
+
+<p> <strong>Subject 511752 Minor Thesis 4</strong> <br />
+  There is no timetable currently available for this subject or this subject 
+  is not offered in the year in question. <br>
+  Please check with the the <a href="http://www.unimelb.edu.au/az/faculties.html" target="_blank"> 
+  teaching department </a> for further details. 
+</p>
+<br><h2>Year: 2010 &nbsp; Summer Semester</h2><p><b>Subject: 325640 Marketing Management</b></p>
+<table border='0'><tr><td></td><td>325640</td><td>S01/01  27th Jan</td><td>Wednesday</td><td>2:00pm - 5:00pm</td><td>Th:The Spot-Level 1 Lecture Theatre</td><td>3 hours </td></tr><tr><td></td><td>325640</td><td>S01/01  Except 25th Jan</td><td>Monday</td><td>10:00am - 1:00pm</td><td>Th:The Spot-Level 1 Lecture Theatre</td><td>3 hours </td></tr><tr><td></td><td>325640</td><td>S02/01</td><td>Wednesday</td><td>10:00am - 1:00pm</td><td>Th:The Spot-Level 1 Lecture Theatre</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 512125 Mind, Brain & Behaviour 1</b></p>
+<table border='0'><tr><td></td><td>512125</td><td>L01/01</td><td>Monday</td><td>9:00am - 1:00pm</td><td>Th:David Caro-Laby Theatre</td><td>4 hours </td></tr><tr><td></td><td>512125</td><td>L02/01</td><td>Tuesday</td><td>9:00am - 1:00pm</td><td>Th:David Caro-Laby Theatre</td><td>4 hours </td></tr><tr><td></td><td>512125</td><td>L03/01</td><td>Wednesday</td><td>9:00am - 1:00pm</td><td>Th:David Caro-Laby Theatre</td><td>4 hours </td></tr><tr><td></td><td>512125</td><td>L04/01</td><td>Thursday</td><td>9:00am - 1:00pm</td><td>Th:David Caro-Laby Theatre</td><td>4 hours </td></tr><tr><td></td><td>512125</td><td>L05/01</td><td>Friday</td><td>9:00am - 1:00pm</td><td>Th:David Caro-Laby Theatre</td><td>4 hours </td></tr></table><br><br>
+<p><b>Subject: 512128 Mind, Brain & Behaviour 2</b></p>
+<table border='0'><tr><td></td><td>512128</td><td>L01/01</td><td>Monday</td><td>9:00am - 1:00pm</td><td>Th:Architecture-103 (eZone)</td><td>4 hours </td></tr><tr><td></td><td>512128</td><td>L02/01</td><td>Tuesday</td><td>9:00am - 1:00pm</td><td>Th:Architecture-103 (eZone)</td><td>4 hours </td></tr><tr><td></td><td>512128</td><td>L03/01</td><td>Wednesday</td><td>9:00am - 1:00pm</td><td>Th:Architecture-103 (eZone)</td><td>4 hours </td></tr><tr><td></td><td>512128</td><td>L04/01</td><td>Thursday</td><td>9:00am - 1:00pm</td><td>Th:Architecture-103 (eZone)</td><td>4 hours </td></tr><tr><td></td><td>512128</td><td>L05/01</td><td>Friday</td><td>9:00am - 1:00pm</td><td>Th:Architecture-103 (eZone)</td><td>4 hours </td></tr></table><br><br>
+<p><b>Subject: 514758 Mental Health and Illness</b></p>
+<table border='0'><tr><td></td><td>514758</td><td>CP1/01</td><td>Friday</td><td>9:00am - 4:00pm</td><td>Th:Arts Centre-Harold White Theatre</td><td>7 hours </td></tr><tr><td></td><td>514758</td><td>L01/01</td><td>Monday</td><td>9:00am - 1:00pm</td><td>Th:200 Berkeley St-Physiotherapy Theatre</td><td>4 hours </td></tr><tr><td></td><td>514758</td><td>L02/01</td><td>Tuesday</td><td>9:00am - 1:00pm</td><td>Th:200 Berkeley St-Physiotherapy Theatre</td><td>4 hours </td></tr><tr><td></td><td>514758</td><td>L03/01</td><td>Wednesday</td><td>9:00am - 1:00pm</td><td>Th:200 Berkeley St-Physiotherapy Theatre</td><td>4 hours </td></tr><tr><td></td><td>514758</td><td>L04/01</td><td>Thursday</td><td>9:00am - 1:00pm</td><td>Th:200 Berkeley St-Physiotherapy Theatre</td><td>4 hours </td></tr></table><br><br>
+<h2>Year: 2010 &nbsp; Semester 1</h2><p><b>Subject: 100582 Media and Communications Thesis</b></p>
+<table border='0'><tr><td></td><td>100582</td><td>S01/01</td><td>Monday</td><td>5:15pm - 8:15pm</td><td>John Medley-339</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 108540 Materials and Techniques of Artefacts</b></p>
+<table border='0'><tr><td></td><td>108540</td><td>L01/01</td><td>Wednesday</td><td>9:00am - 10:00am</td><td>Alice Hoy-307</td><td>1 hour </td></tr><tr><td></td><td>108540</td><td>P01/01</td><td>Wednesday</td><td>11:00am - 1:00pm</td><td>Asia Centre-G03</td><td>2 hours </td></tr><tr><td></td><td>108540</td><td>P01/02</td><td>Wednesday</td><td>2:15pm - 4:15pm</td><td>Asia Centre-G03</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 207420 Managing Trees in Urban Landscapes</b></p>
+<table border='0'><tr><td></td><td>207420</td><td>L01/01  23rd Jun</td><td>Wednesday</td><td>9:00am - 5:00pm</td><td>Burnley Campus-QAD3</td><td>8 hours </td></tr><tr><td></td><td>207420</td><td>L02/01  24th Jun</td><td>Thursday</td><td>9:00am - 5:00pm</td><td>Burnley Campus-QAD3</td><td>8 hours </td></tr><tr><td></td><td>207420</td><td>L03/01  25th Jun</td><td>Friday</td><td>9:00am - 5:00pm</td><td>Burnley Campus-QAD3</td><td>8 hours </td></tr><tr><td></td><td>207420</td><td>L04/01  26th Jun</td><td>Saturday</td><td>9:00am - 5:00pm</td><td>Burnley Campus-QAD3</td><td>8 hours </td></tr><tr><td></td><td>207420</td><td>L05/01  15th Jun</td><td>Wednesday</td><td>9:00am - 5:00pm</td><td>Burnley Campus-QAD3</td><td>8 hours </td></tr><tr><td></td><td>207420</td><td>L06/01  16th Jun</td><td>Thursday</td><td>9:00am - 5:00pm</td><td>Burnley Campus-QAD3</td><td>8 hours </td></tr><tr><td></td><td>207420</td><td>L07/01  17th Jun</td><td>Friday</td><td>9:00am - 5:00pm</td><td>Burnley Campus-QAD3</td><td>8 hours </td></tr></table><br><br>
+<p><b>Subject: 316611 Microeconomics</b></p>
+<table border='0'><tr><td></td><td>316611</td><td>L01/01</td><td>Wednesday</td><td>11:00am - 12:30pm</td><td>Alice Hoy-333</td><td>1.5 hours </td></tr><tr><td></td><td>316611</td><td>L02/01</td><td>Friday</td><td>9:30am - 11:00am</td><td>John Medley-512</td><td>1.5 hours </td></tr><tr><td></td><td>316611</td><td>T01/01</td><td>Friday</td><td>4:15pm - 5:15pm</td><td>Ec & Comm-G08</td><td>1 hour </td></tr></table><br><br>
+<p><b>Subject: 316890 Microeconomics 3</b></p>
+<table border='0'><tr><td></td><td>316890</td><td>L01/01</td><td>Wednesday</td><td>6:15pm - 8:15pm</td><td>John Medley-512</td><td>2 hours </td></tr><tr><td></td><td>316890</td><td>T01/01</td><td>Wednesday</td><td>8:15pm - 9:15pm</td><td>John Medley-512</td><td>1 hour </td></tr></table><br><br>
+<p><b>Subject: 325640 Marketing Management</b></p>
+<table border='0'><tr><td></td><td>325640</td><td>L01/01</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Th:Ec & Comm-G12 [Theatrette 2]</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 325642 Managing Stakeholders</b></p>
+<table border='0'><tr><td></td><td>325642</td><td>L01/01</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Th:The Spot-Level 1 Lecture Theatre</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 325689 Managing the Multinational</b></p>
+<table border='0'><tr><td></td><td>325689</td><td>L01/01</td><td>Wednesday</td><td>6:15pm - 9:15pm</td><td>The Spot-513/514</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 333631 Mergers and Value Enhancing Strategies</b></p>
+<table border='0'><tr><td></td><td>333631</td><td>L01/01</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Th:The Spot-Level 1 Lecture Theatre</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 333663 Mergers and Value Enhancing Strategies</b></p>
+<table border='0'><tr><td></td><td>333663</td><td>L01/01</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Th:The Spot-Level 1 Lecture Theatre</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 400684 Mineral Economics</b></p>
+<table border='0'><tr><td></td><td>400684</td><td>L01/01</td><td>Wednesday</td><td>5:15pm - 6:15pm</td><td>Engineering B-313 (ELS)</td><td>1 hour </td></tr><tr><td></td><td>400684</td><td>T01/01</td><td>Wednesday</td><td>6:15pm - 8:15pm</td><td>Engineering B-313 (ELS)</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 400685 Mineral Processing and Waste Management</b></p>
+<table border='0'><tr><td></td><td>400685</td><td>L01/01</td><td>Thursday</td><td>5:15pm - 6:15pm</td><td>Engineering B-313 (ELS)</td><td>1 hour </td></tr><tr><td></td><td>400685</td><td>T01/01</td><td>Thursday</td><td>6:15pm - 8:15pm</td><td>Engineering B-313 (ELS)</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 482805 Marketing in Education</b></p>
+<table border='0'><tr><td></td><td>482805</td><td>S01/01  19th Mar</td><td>Friday</td><td>5:15pm - 8:15pm</td><td>Alice Hoy-242</td><td>3 hours </td></tr><tr><td></td><td>482805</td><td>S02/01  20th Mar</td><td>Saturday</td><td>9:00am - 5:00pm</td><td>Doug McDonell-619   </td><td>8 hours </td></tr><tr><td></td><td>482805</td><td>S03/01  16th Apr</td><td>Friday</td><td>5:15pm - 8:15pm</td><td>Alice Hoy-242</td><td>3 hours </td></tr><tr><td></td><td>482805</td><td>S04/01  17th Apr</td><td>Saturday</td><td>9:00am - 5:00pm</td><td>Alice Hoy-225</td><td>8 hours </td></tr><tr><td></td><td>482805</td><td>S05/01  07th May</td><td>Friday</td><td>5:15pm - 8:15pm</td><td>Alice Hoy-242</td><td>3 hours </td></tr><tr><td></td><td>482805</td><td>S06/01  09th May</td><td>Sunday</td><td>9:00am - 5:00pm</td><td>Alice Hoy-242</td><td>8 hours </td></tr><tr><td></td><td>482805</td><td>S07/01  29th May</td><td>Saturday</td><td>9:00am - 5:00pm</td><td>Alice Hoy-242</td><td>8 hours </td></tr></table><br><br>
+<p><b>Subject: 514713 Minor Thesis</b></p>
+<table border='0'><tr><td></td><td>514713</td><td>L01/01</td><td>Tuesday</td><td>11:00am - 12:00pm</td><td>234 Queensberry St-419</td><td>1 hour </td></tr></table><br><br>
+<p><b>Subject: 514842 Mental Health Triage and Intake Practice</b></p>
+<table border='0'><tr><td></td><td>514842</td><td>L01/01</td><td>Wednesday</td><td>9:00am - 11:00am</td><td>Th:Medical-Rand Theatre</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 514848 Mental Health Theory 1</b></p>
+<table border='0'><tr><td></td><td>514848</td><td>L01/01</td><td>Tuesday</td><td>9:00am - 5:00pm</td><td>Th:Alan Gilbert-Theatre 2</td><td>8 hours </td></tr><tr><td></td><td>514848</td><td>L02/01</td><td>Wednesday</td><td>9:00am - 5:00pm</td><td>Th:Alan Gilbert-Theatre 2</td><td>8 hours </td></tr><tr><td></td><td>514848</td><td>L03/01</td><td>Wednesday</td><td>3:15pm - 6:15pm</td><td>Th:200 Berkeley St-G73 Theatre</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 600651 Microscopy for Biological Sciences</b></p>
+<table border='0'><tr><td></td><td>600651</td><td>W01/01</td><td>Friday</td><td>9:00am - 10:00am</td><td>Th:Botany-Turner Theatre</td><td>1 hour </td></tr><tr><td></td><td>600651</td><td>W02/01</td><td>Friday</td><td>10:00am - 1:00pm</td><td>Natural Philosophy-226 (Sky Lab)</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 620645 Measure Theory</b></p>
+<table border='0'><tr><td></td><td>620645</td><td>L01/01</td><td>Wednesday</td><td>3:15pm - 5:15pm</td><td>Richard Berry-215</td><td>2 hours </td></tr><tr><td></td><td>620645</td><td>P01/01</td><td>Friday</td><td>3:15pm - 4:15pm</td><td>Richard Berry-215</td><td>1 hour </td></tr></table><br><br>
+<p><b>Subject: 702506 Master of Architecture Studio E</b></p>
+<table border='0'><tr><td></td><td>702506</td><td>L01/01  01st Mar</td><td>Monday</td><td>5:15pm - 9:15pm</td><td>Th:Architecture-Prince Philip Theatre</td><td>4 hours </td></tr><tr><td></td><td>702506</td><td>ST1/01</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/02</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/03</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/04</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/05</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/06</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/07</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/08</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/09</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/10</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/11</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/12</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/13</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/14</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/15</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/16</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/17</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/18</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-207 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/19</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-211 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/20</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-211 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/21</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/22</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/23</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-604 (Floor 6 Studio)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/24</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-524</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/25</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-527</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/01</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/02</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/03</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/04</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/05</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/06</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/07</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/08</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/09</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/10</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/11</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/12</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/13</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/14</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/15</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/16</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/17</td><td>Thursday</td><td>2:15pm - 5:15pm</td><td>Architecture-207 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/18</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-211 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/19</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/20</td><td>Thursday</td><td>5:15pm - 8:15pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/21</td><td>Thursday</td><td>5:15pm - 8:15pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/22</td><td>Thursday</td><td>5:15pm - 8:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/23</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/24</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-524</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/25</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-522</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 702606 Master of Architecture Studio C</b></p>
+<table border='0'><tr><td></td><td>702606</td><td>L01/01  01st Mar</td><td>Monday</td><td>5:15pm - 9:15pm</td><td>Th:Architecture-Prince Philip Theatre</td><td>4 hours </td></tr><tr><td></td><td>702606</td><td>ST1/01</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/02</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/03</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/04</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/05</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/06</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/07</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/08</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/09</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/10</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/11</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/12</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/13</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/14</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/15</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/16</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/17</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/18</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-207 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/19</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-211 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/20</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-211 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/21</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/22</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/23</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-604 (Floor 6 Studio)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/24</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-524</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/25</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-527</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/01</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/02</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/03</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/04</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/05</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/06</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/07</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/08</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/09</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/10</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/11</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/12</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/13</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/14</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/15</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/16</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/17</td><td>Thursday</td><td>2:15pm - 5:15pm</td><td>Architecture-207 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/18</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-211 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/19</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/20</td><td>Thursday</td><td>5:15pm - 8:15pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/21</td><td>Thursday</td><td>5:15pm - 8:15pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/22</td><td>Thursday</td><td>5:15pm - 8:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/23</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/24</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-524</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/25</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-522</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 702607 Master of Architecture Studio D</b></p>
+<table border='0'><tr><td></td><td>702607</td><td>L01/01  01st Mar</td><td>Monday</td><td>5:15pm - 9:15pm</td><td>Th:Architecture-Prince Philip Theatre</td><td>4 hours </td></tr><tr><td></td><td>702607</td><td>ST1/01</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/02</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/03</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/04</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/05</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/06</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/07</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/08</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/09</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/10</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/11</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/12</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/13</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/14</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/15</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/16</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/17</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/18</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-207 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/19</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-211 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/20</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-211 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/21</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/22</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/23</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-604 (Floor 6 Studio)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/24</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-524</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/25</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-527</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/01</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/02</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/03</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/04</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/05</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/06</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/07</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/08</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/09</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/10</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/11</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/12</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/13</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/14</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/15</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/16</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/17</td><td>Thursday</td><td>2:15pm - 5:15pm</td><td>Architecture-207 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/18</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-211 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/19</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/20</td><td>Thursday</td><td>5:15pm - 8:15pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/21</td><td>Thursday</td><td>5:15pm - 8:15pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/22</td><td>Thursday</td><td>5:15pm - 8:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/23</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/24</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-524</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/25</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-522</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 702632 Measured Drawing</b></p>
+<table border='0'><tr><td></td><td>702632</td><td>S01/01</td><td>Monday</td><td>10:00am - 11:00am</td><td>Architecture-136 [Indian Room]</td><td>1 hour </td></tr></table><br><br>
+<p><b>Subject: 702684 Master of Architecture Studio A</b></p>
+<table border='0'><tr><td></td><td>702684</td><td>L01/01</td><td>Monday</td><td>11:00am - 12:00pm</td><td>Th:Richard Berry-Russell Love Theatre</td><td>1 hour </td></tr><tr><td></td><td>702684</td><td>ST1/01</td><td>Monday</td><td>12:00pm - 3:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702684</td><td>ST1/02</td><td>Monday</td><td>12:00pm - 3:00pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702684</td><td>ST2/01</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-207 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702684</td><td>ST2/02</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-527</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 740546 Minor Thesis (Music Therapy) 1</b></p>
+<table border='0'><tr><td></td><td>740546</td><td>S01/01</td><td>Monday</td><td>9:00am - 11:00am</td><td>John Medley-339</td><td>2 hours </td></tr></table><br><br>
+<h2>Year: 2010 &nbsp; Semester 2</h2><p><b>Subject: 100521 Media Writing: Rhetoric and Practice</b></p>
+<table border='0'><tr><td></td><td>100521</td><td>S01/01</td><td>Thursday</td><td>5:15pm - 8:15pm</td><td>John Medley-G23</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 100571 Media Convergence and Digital Culture</b></p>
+<table border='0'><tr><td></td><td>100571</td><td>S01/01</td><td>Thursday</td><td>9:00am - 11:00am</td><td>John Medley-339</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 100582 Media and Communications Thesis</b></p>
+<table border='0'><tr><td></td><td>100582</td><td>W01/01</td><td>Monday</td><td>5:15pm - 8:15pm</td><td>John Medley-339</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 131556 Middle Eastern Wars: Jihad & Resistance</b></p>
+<table border='0'><tr><td></td><td>131556</td><td>S01/01</td><td>Thursday</td><td>11:00am - 1:00pm</td><td>Cussonia Court-Room 1</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 131557 Medieval Manuscripts & Early Print</b></p>
+<table border='0'><tr><td></td><td>131557</td><td>S01/01  17th Aug</td><td>Tuesday</td><td>5:15pm - 7:15pm</td><td>Architecture-142</td><td>2 hours </td></tr><tr><td></td><td>131557</td><td>S01/01  17th Aug Cover</td><td>Tuesday</td><td>5:15pm - 7:15pm</td><td>Old Arts-227  (Arts Seminar)</td><td>2 hours </td></tr><tr><td></td><td>131557</td><td>S02/01  19th Aug</td><td>Thursday</td><td>5:15pm - 7:15pm</td><td>Architecture-142</td><td>2 hours </td></tr><tr><td></td><td>131557</td><td>S02/01  19th Aug Cover</td><td>Thursday</td><td>5:15pm - 7:15pm</td><td>Old Arts-227  (Arts Seminar)</td><td>2 hours </td></tr><tr><td></td><td>131557</td><td>S03/01  24th Aug</td><td>Tuesday</td><td>5:15pm - 7:15pm</td><td>Architecture-142</td><td>2 hours </td></tr><tr><td></td><td>131557</td><td>S03/01  24th Aug Cover</td><td>Tuesday</td><td>5:15pm - 7:15pm</td><td>Old Arts-227  (Arts Seminar)</td><td>2 hours </td></tr><tr><td></td><td>131557</td><td>S04/01  26th Aug</td><td>Thursday</td><td>5:15pm - 7:15pm</td><td>Architecture-142</td><td>2 hours </td></tr><tr><td></td><td>131557</td><td>S04/01  26th Aug Cover</td><td>Thursday</td><td>5:15pm - 7:15pm</td><td>Old Arts-227  (Arts Seminar)</td><td>2 hours </td></tr><tr><td></td><td>131557</td><td>S05/01  31st Aug</td><td>Tuesday</td><td>5:15pm - 7:15pm</td><td>Architecture-142</td><td>2 hours </td></tr><tr><td></td><td>131557</td><td>S05/01  31st Aug Cover</td><td>Tuesday</td><td>5:15pm - 7:15pm</td><td>Old Arts-227  (Arts Seminar)</td><td>2 hours </td></tr><tr><td></td><td>131557</td><td>S06/01  02nd Sep</td><td>Thursday</td><td>5:15pm - 7:15pm</td><td>Architecture-142</td><td>2 hours </td></tr><tr><td></td><td>131557</td><td>S06/01  02nd Sep Cover</td><td>Thursday</td><td>5:15pm - 7:15pm</td><td>Old Arts-227  (Arts Seminar)</td><td>2 hours </td></tr><tr><td></td><td>131557</td><td>S07/01  04th Sep</td><td>Saturday</td><td>1:00pm - 4:00pm</td><td>Architecture-142</td><td>3 hours </td></tr><tr><td></td><td>131557</td><td>S07/01  04th Sep Cover</td><td>Saturday</td><td>1:00pm - 4:00pm</td><td>Old Arts-227  (Arts Seminar)</td><td>3 hours </td></tr><tr><td></td><td>131557</td><td>S08/01  07th Sep</td><td>Tuesday</td><td>5:15pm - 7:15pm</td><td>Architecture-142</td><td>2 hours </td></tr><tr><td></td><td>131557</td><td>S08/01  07th Sep Cover</td><td>Tuesday</td><td>5:15pm - 7:15pm</td><td>Old Arts-227  (Arts Seminar)</td><td>2 hours </td></tr><tr><td></td><td>131557</td><td>S09/01  09th Sep</td><td>Thursday</td><td>5:15pm - 7:15pm</td><td>Architecture-142</td><td>2 hours </td></tr><tr><td></td><td>131557</td><td>S09/01  09th Sep Cover</td><td>Thursday</td><td>5:15pm - 7:15pm</td><td>Old Arts-227  (Arts Seminar)</td><td>2 hours </td></tr><tr><td></td><td>131557</td><td>W01/01  21st Aug</td><td>Saturday</td><td>10:00am - 1:00pm</td><td>Architecture-142</td><td>3 hours </td></tr><tr><td></td><td>131557</td><td>W01/01  21st Aug Cover</td><td>Saturday</td><td>10:00am - 1:00pm</td><td>Old Arts-227  (Arts Seminar)</td><td>3 hours </td></tr><tr><td></td><td>131557</td><td>W02/01  21st Aug</td><td>Saturday</td><td>2:00pm - 4:00pm</td><td>Architecture-142</td><td>2 hours </td></tr><tr><td></td><td>131557</td><td>W02/01  21st Aug Cover</td><td>Saturday</td><td>2:00pm - 4:00pm</td><td>Old Arts-227  (Arts Seminar)</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 208746 Meat and Smallgoods Technology</b></p>
+<table border='0'><tr><td></td><td>208746</td><td>L01/01</td><td>Monday</td><td>3:15pm - 5:15pm</td><td>Th:Zoology-Agar Theatre</td><td>2 hours </td></tr><tr><td></td><td>208746</td><td>L02/01</td><td>Thursday</td><td>10:00am - 12:00pm</td><td>Th:LFR-Lower Theatre</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 316650 Microeconomics II</b></p>
+<table border='0'><tr><td></td><td>316650</td><td>L01/01</td><td>Tuesday</td><td>2:15pm - 3:45pm</td><td>Old Arts-152</td><td>1.5 hours </td></tr><tr><td></td><td>316650</td><td>L02/01</td><td>Friday</td><td>10:00am - 11:30am</td><td>Alice Hoy-108</td><td>1.5 hours </td></tr></table><br><br>
+<p><b>Subject: 316659 Microeconometrics</b></p>
+<table border='0'><tr><td></td><td>316659</td><td>L01/01</td><td>Monday</td><td>1:30pm - 3:00pm</td><td>Old Physics-201</td><td>1.5 hours </td></tr><tr><td></td><td>316659</td><td>L02/01</td><td>Friday</td><td>12:00pm - 1:30pm</td><td>The Spot-311 (Comp Lab)</td><td>1.5 hours </td></tr></table><br><br>
+<p><b>Subject: 316889 Microeconomics 2</b></p>
+<table border='0'><tr><td></td><td>316889</td><td>L01/01</td><td>Tuesday</td><td>6:15pm - 8:15pm</td><td>Th:Ec & Comm-Wood Theatre</td><td>2 hours </td></tr><tr><td></td><td>316889</td><td>T01/01</td><td>Tuesday</td><td>5:15pm - 6:15pm</td><td>Ec & Comm-G07</td><td>1 hour </td></tr></table><br><br>
+<p><b>Subject: 325640 Marketing Management</b></p>
+<table border='0'><tr><td></td><td>325640</td><td>L01/01</td><td>Wednesday</td><td>2:15pm - 5:15pm</td><td>Th:The Spot-Level 1 Lecture Theatre</td><td>3 hours </td></tr><tr><td></td><td>325640</td><td>L01/02</td><td>Wednesday</td><td>6:15pm - 9:15pm</td><td>Th:ICT-Theatre 3</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 325660 Marketing Strategy</b></p>
+<table border='0'><tr><td></td><td>325660</td><td>L01/01</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Th:ICT-Theatre 3</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 325671 Marketing Channels</b></p>
+<table border='0'><tr><td></td><td>325671</td><td>L01/01</td><td>Thursday</td><td>2:15pm - 5:15pm</td><td>Th:ICT-Theatre 3</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 325672 Managing in Information Societies</b></p>
+<table border='0'><tr><td></td><td>325672</td><td>W01/01  07th, 14th, 21st, 28th Aug & 04th Sep</td><td>Saturday</td><td>9:00am - 6:00pm</td><td>Th:The Spot-Level 1 Lecture Theatre</td><td>9 hours </td></tr></table><br><br>
+<p><b>Subject: 325675 Managing e-business Supply Chains</b></p>
+<table border='0'><tr><td></td><td>325675</td><td>L01/01  23rd Aug & 06th Sep</td><td>Monday</td><td>10:00am - 5:15pm</td><td>Th:234 Queensberry St-Public Policy Theatre   </td><td>7.25 hours </td></tr><tr><td></td><td>325675</td><td>L02/01  26th Aug & 09th Sep</td><td>Thursday</td><td>10:00am - 5:15pm</td><td>Th:234 Queensberry St-Public Policy Theatre   </td><td>7.25 hours </td></tr><tr><td></td><td>325675</td><td>L03/01  27th Aug & 10th Sep</td><td>Friday</td><td>10:00am - 5:15pm</td><td>Th:234 Queensberry St-Public Policy Theatre   </td><td>7.25 hours </td></tr></table><br><br>
+<p><b>Subject: 325676 Managing e-business Supply Chains</b></p>
+<table border='0'><tr><td></td><td>325676</td><td>L01/01  16th & 30th Aug</td><td>Monday</td><td>10:00am - 5:15pm</td><td>Th:234 Queensberry St-Public Policy Theatre   </td><td>7.25 hours </td></tr><tr><td></td><td>325676</td><td>L02/01  19th Aug & 02nd Sep</td><td>Thursday</td><td>10:00am - 5:15pm</td><td>Th:234 Queensberry St-Public Policy Theatre   </td><td>7.25 hours </td></tr><tr><td></td><td>325676</td><td>L03/01  20th Aug & 03rd Sep</td><td>Friday</td><td>10:00am - 5:15pm</td><td>Th:234 Queensberry St-Public Policy Theatre   </td><td>7.25 hours </td></tr></table><br><br>
+<p><b>Subject: 325680 Marketing Research</b></p>
+<table border='0'><tr><td></td><td>325680</td><td>L01/01</td><td>Monday</td><td>2:15pm - 5:15pm</td><td>Th:Alan Gilbert-Theatre 2</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 325689 Managing the Multinational</b></p>
+<table border='0'><tr><td></td><td>325689</td><td>W01/01</td><td>Thursday</td><td>2:15pm - 5:15pm</td><td>The Spot-513/514</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 333631 Mergers and Value Enhancing Strategies</b></p>
+<table border='0'><tr><td></td><td>333631</td><td>L01/01</td><td>Monday</td><td>6:15pm - 9:15pm</td><td>Th:ICT-Theatre 3</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 333663 Mergers and Value Enhancing Strategies</b></p>
+<table border='0'><tr><td></td><td>333663</td><td>L01/01</td><td>Monday</td><td>6:15pm - 9:15pm</td><td>Th:ICT-Theatre 3</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 400689 Mining Geotechnics and Mine Design</b></p>
+<table border='0'><tr><td></td><td>400689</td><td>L01/01</td><td>Monday</td><td>2:15pm - 3:15pm</td><td>Engineering B-313 (ELS)</td><td>1 hour </td></tr><tr><td></td><td>400689</td><td>T01/01</td><td>Monday</td><td>6:15pm - 8:15pm</td><td>Engineering B-313 (ELS)</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 400690 Mine Dewatering, Ventilation and Power</b></p>
+<table border='0'><tr><td></td><td>400690</td><td>L01/01</td><td>Tuesday</td><td>5:15pm - 6:15pm</td><td>Engineering B-313 (ELS)</td><td>1 hour </td></tr><tr><td></td><td>400690</td><td>T01/01</td><td>Tuesday</td><td>6:15pm - 8:15pm</td><td>Engineering B-313 (ELS)</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 411695 Metabolic Engineering</b></p>
+<table border='0'><tr><td></td><td>411695</td><td>L01/01</td><td>Tuesday</td><td>9:00am - 10:00am</td><td>Th:Old Arts-Theatre D</td><td>1 hour </td></tr><tr><td></td><td>411695</td><td>L02/01</td><td>Wednesday</td><td>9:00am - 10:00am</td><td>Th:Engineering-C1 Theatre</td><td>1 hour </td></tr><tr><td></td><td>411695</td><td>L03/01</td><td>Thursday</td><td>9:00am - 10:00am</td><td>Th:Old Arts-Theatre D</td><td>1 hour </td></tr></table><br><br>
+<p><b>Subject: 460516 Mathematics, Assessment and Learning</b></p>
+<table border='0'><tr><td></td><td>460516</td><td>L01/01</td><td>Wednesday</td><td>4:15pm - 5:15pm</td><td>Th:Doug McDonell-Herbert Wilson Theatre</td><td>1 hour </td></tr><tr><td></td><td>460516</td><td>W01/02</td><td>Thursday</td><td>12:00pm - 2:00pm</td><td>Doug McDonell-706</td><td>2 hours </td></tr><tr><td></td><td>460516</td><td>W01/03</td><td>Thursday</td><td>10:00am - 12:00pm</td><td>Doug McDonell-706</td><td>2 hours </td></tr><tr><td></td><td>460516</td><td>W01/04</td><td>Friday</td><td>10:00am - 12:00pm</td><td>Doug McDonell-706</td><td>2 hours </td></tr><tr><td></td><td>460516</td><td>W01/05</td><td>Friday</td><td>12:00pm - 2:00pm</td><td>Doug McDonell-706</td><td>2 hours </td></tr><tr><td></td><td>460516</td><td>W01/06</td><td>Friday</td><td>2:15pm - 4:15pm</td><td>Doug McDonell-706</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 483889 Methodology & Curriculum Design:ModLngEd</b></p>
+<table border='0'><tr><td></td><td>483889</td><td>W01/01</td><td>Tuesday</td><td>5:15pm - 7:15pm</td><td>Alice Hoy-225</td><td>2 hours </td></tr><tr><td></td><td>483889</td><td>W01/02</td><td>Wednesday</td><td>5:15pm - 7:15pm</td><td>Alice Hoy-225</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 485870 Mathematical Statistics For Teachers</b></p>
+<table border='0'><tr><td></td><td>485870</td><td>L01/01</td><td>Wednesday</td><td>5:15pm - 8:15pm</td><td>Doug McDonell-711</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 512909 Mentl Hlth Issues/Intellctl Disabilities</b></p>
+<table border='0'><tr><td></td><td>512909</td><td>S01/01</td><td>Wednesday</td><td>2:15pm - 4:15pm</td><td>Redmond Barry-1120 [Oscar Oeser Room]</td><td>2 hours </td></tr></table><br><br>
+<p><b>Subject: 514713 Minor Thesis</b></p>
+<table border='0'><tr><td></td><td>514713</td><td>L01/01</td><td>Monday</td><td>1:00pm - 2:00pm</td><td>234 Queensberry St-419</td><td>1 hour </td></tr></table><br><br>
+<p><b>Subject: 514766 Mental Health Nursing</b></p>
+<table border='0'><tr><td></td><td>514766</td><td>L01/01  04th Oct</td><td>Monday</td><td>9:00am - 1:00pm</td><td>Th:234 Queensberry St-Public Policy Theatre   </td><td>4 hours </td></tr><tr><td></td><td>514766</td><td>L02/01  05th Oct</td><td>Tuesday</td><td>9:00am - 1:00pm</td><td>Th:234 Queensberry St-Public Policy Theatre   </td><td>4 hours </td></tr><tr><td></td><td>514766</td><td>L03/01  06th Oct</td><td>Wednesday</td><td>9:00am - 1:00pm</td><td>234 Queensberry St-G05   </td><td>4 hours </td></tr><tr><td></td><td>514766</td><td>L04/01  07th Oct</td><td>Thursday</td><td>9:00am - 1:00pm</td><td>234 Queensberry St-521   </td><td>4 hours </td></tr><tr><td></td><td>514766</td><td>L05/01  08th Oct</td><td>Friday</td><td>1:00pm - 3:00pm</td><td>234 Queensberry St-521   </td><td>2 hours </td></tr><tr><td></td><td>514766</td><td>P01/01  04th Oct</td><td>Monday</td><td>2:15pm - 9:15pm</td><td>Th:234 Queensberry St-Public Policy Theatre   </td><td>7 hours </td></tr><tr><td></td><td>514766</td><td>P02/01</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Th:234 Queensberry St-Public Policy Theatre   </td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 514850 Mental Health Theory 2</b></p>
+<table border='0'><tr><td></td><td>514850</td><td>L01/01</td><td>Wednesday</td><td>9:00am - 12:00pm</td><td>Th:Alan Gilbert-Theatre 2</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 620502 Mathematics of Risk</b></p>
+<table border='0'><tr><td></td><td>620502</td><td>L01/01</td><td>Wednesday</td><td>12:00pm - 2:00pm</td><td>Richard Berry-213</td><td>2 hours </td></tr><tr><td></td><td>620502</td><td>P01/01</td><td>Friday</td><td>11:00am - 12:00pm</td><td>Richard Berry-213</td><td>1 hour </td></tr></table><br><br>
+<p><b>Subject: 702506 Master of Architecture Studio E</b></p>
+<table border='0'><tr><td></td><td>702506</td><td>L01/01</td><td>Monday</td><td>5:15pm - 9:15pm</td><td>Th:Asia Centre-Carrillo Gantner Theatre</td><td>4 hours </td></tr><tr><td></td><td>702506</td><td>ST1/02</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/03</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/04</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/05</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/06</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/07</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/08</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/09</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/10</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/11</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/12</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/13</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/14</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/15</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/16</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/17</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/18</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/19</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/20</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/21</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/22</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/23</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/24</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/25</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-211 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/26</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/27</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST1/28</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/01</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/02</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/03</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/04</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/05</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/06</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/07</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/08</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/09</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/10</td><td>Thursday</td><td>5:15pm - 8:15pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/11</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-524</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/12</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/13</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/14</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/15</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-207 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/16</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/17</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/18</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/19</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/20</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/21</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/22</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/23</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/24</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/25</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/26</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/27</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702506</td><td>ST2/28</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 702606 Master of Architecture Studio C</b></p>
+<table border='0'><tr><td></td><td>702606</td><td>L01/01</td><td>Monday</td><td>5:15pm - 9:15pm</td><td>Th:Asia Centre-Carrillo Gantner Theatre</td><td>4 hours </td></tr><tr><td></td><td>702606</td><td>ST1/02</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/03</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/04</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/05</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/06</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/07</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/08</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/09</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/10</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/11</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/12</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/13</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/14</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/15</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/16</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/17</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/18</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/19</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/20</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/21</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/22</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/23</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/24</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/25</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-211 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/26</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/27</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST1/28</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/01</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/02</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/03</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/04</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/05</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/06</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/07</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/08</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/09</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/10</td><td>Thursday</td><td>5:15pm - 8:15pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/11</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-524</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/12</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/13</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/14</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/15</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-207 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/16</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/17</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/18</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/19</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/20</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/21</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/22</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/23</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/24</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/25</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/26</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/27</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702606</td><td>ST2/28</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 702607 Master of Architecture Studio D</b></p>
+<table border='0'><tr><td></td><td>702607</td><td>L01/01</td><td>Monday</td><td>5:15pm - 9:15pm</td><td>Th:Asia Centre-Carrillo Gantner Theatre</td><td>4 hours </td></tr><tr><td></td><td>702607</td><td>ST1/02</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/03</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/04</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/05</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/06</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/07</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/08</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/09</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/10</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/11</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/12</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/13</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/14</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/15</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/16</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/17</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/18</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/19</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/20</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/21</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/22</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/23</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/24</td><td>Tuesday</td><td>9:00am - 12:00pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/25</td><td>Tuesday</td><td>2:15pm - 5:15pm</td><td>Architecture-211 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/26</td><td>Tuesday</td><td>5:15pm - 8:15pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/27</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST1/28</td><td>Tuesday</td><td>6:15pm - 9:15pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/01</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/02</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/03</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/04</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/05</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/06</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/07</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/08</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/09</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/10</td><td>Thursday</td><td>5:15pm - 8:15pm</td><td>Architecture-320 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/11</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-524</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/12</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/13</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/14</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/15</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-207 (Studio)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/16</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/17</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-308 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/18</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-209 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/19</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/20</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-321 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/21</td><td>Thursday</td><td>6:15pm - 9:15pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/22</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/23</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/24</td><td>Thursday</td><td>3:15pm - 6:15pm</td><td>Architecture-307 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/25</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-322 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/26</td><td>Thursday</td><td>12:00pm - 3:00pm</td><td>Architecture-306 (Flexible Teaching Space)</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/27</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-206</td><td>3 hours </td></tr><tr><td></td><td>702607</td><td>ST2/28</td><td>Thursday</td><td>9:00am - 12:00pm</td><td>Architecture-210 (Flexible Teaching Space)</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 702685 Master of Architecture Studio B</b></p>
+<table border='0'><tr><td></td><td>702685</td><td>L01/01</td><td>Monday</td><td>10:00am - 11:00am</td><td>Th:Ec & Comm-G13 [Theatrette 3]</td><td>1 hour </td></tr><tr><td></td><td>702685</td><td>ST1/01</td><td>Monday</td><td>12:00pm - 3:00pm</td><td>Architecture-524</td><td>3 hours </td></tr><tr><td></td><td>702685</td><td>ST1/02</td><td>Monday</td><td>12:00pm - 3:00pm</td><td>Architecture-522</td><td>3 hours </td></tr><tr><td></td><td>702685</td><td>ST2/01</td><td>Wednesday</td><td>2:15pm - 5:15pm</td><td>Architecture-527</td><td>3 hours </td></tr><tr><td></td><td>702685</td><td>ST2/02</td><td>Wednesday</td><td>2:15pm - 5:15pm</td><td>Architecture-524</td><td>3 hours </td></tr></table><br><br>
+<p><b>Subject: 740547 Minor Thesis (Music Therapy) 2</b></p>
+<table border='0'><tr><td></td><td>740547</td><td>S01/01</td><td>Thursday</td><td>2:15pm - 4:15pm</td><td>LFR-G26</td><td>2 hours </td></tr></table><br><br>
+<p></p><hr>
+<p><strong><a href="http://www.studentadmin.unimelb.edu.au/leclist.html" target="_blank">Lecture 
+  Theatre Location List</strong></a></p>
+
+
+</DIV>
+</td>
+</tr>
+</table>
+</div>
+<!-- END MIDDLE SECTION -->
+<!-- START BOTTOM SECTION -->
+	<table width="100%" cellpadding="0" cellspacing="0" border="0" summary="This table contains links to University 
+		contact details and copyright, disclaimer, privacy and accessibility information.">
+		<tr>
+			<!-- Start c_footbar.html include v20042004 -->
+			<td class="customfootbar" nowrap="nowrap"> <p id="brandingbar">
+				<a href="http://www.studentadmin.unimelb.edu.au/contactus.html">Contact us</a></p></td>
+			<!-- End c_footbar.html include -->
+			<!-- Start g_subsite_footbar_rhs.html include v20042004 -->
+			<td class="footbar" nowrap="nowrap"> <p id="contactbar"><a href="http://www.unimelb.edu.au/contact/index.html" 
+				accesskey="o" title="How to contact the University of Melbourne">Contact the University</a> : 
+				<a href="http://www.unimelb.edu.au/disclaimer/" accesskey="d" title="Caution notice and copyright notice">Disclaimer 
+				& Copyright</a> : <a href="http://www.unimelb.edu.au/disclaimer/privacy.html" accesskey="p" 
+				title="Privacy for students and staff, freedom of information">Privacy</a>: 
+				<a href="http://www.unimelb.edu.au/accessibility/" accesskey="a" 
+				title="Accessibility features of the website">Accessibility</a></p></td>
+			<!-- End g_subsite_footbar_rhs.html include -->
+		</tr>
+	</table>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0" summary="This table contains contact details and 
+		information about this page.">
+		<tr>
+			<td id="author" class="footer"><p> 
+				Date Created: <!-- InstanceBeginEditable name="Date Created" -->28 June 2006<!-- InstanceEndEditable --><br />
+				Last Modified: <!-- InstanceBeginEditable name="Last Modified" -->19 October 2009 11:35:00<!-- InstanceEndEditable --> <br />
+				Authorised By: <!-- InstanceBeginEditable name="Authoriser" -->Director, Student Management Services<!-- InstanceEndEditable --><br />
+				Maintainer: <!-- InstanceBeginEditable name="Maintainer" -->Student Management Services<!-- InstanceEndEditable --><br />
+				<strong>Help:</strong> <!-- InstanceBeginEditable name="Email" -->for <a href="http://www.services.unimelb.edu.au/StudentCentre/centre/contact.html">Current Students</a> 
+						or for <a href="http://www.futurestudents.unimelb.edu.au/about/contact.html">Future Students</a><!-- InstanceEndEditable --> </p></td>
+			<td id="legal" class="footer">
+				<!-- Start g_footer.html include v20042004 -->
+				<p> The University of Melbourne <acronym title="Australian Business Number">ABN</acronym>: 84 002 705 224<br />
+					<acronym title="Commonwealth Register of Institutions and Courses for Overseas Students">CRICOS</acronym> Provider Number: 
+					00116K ( <a href="http://www.services.unimelb.edu.au/international/visas/index.html" accesskey="i" 
+					title="Information about student visas, work visas, extensions and course transfers">More information</a> )<br />
+					<a href="http://www.futurestudents.unimelb.edu.au/" accesskey="e" title="Course enquiries, admissions, course search, 
+					courses and programs">Course Enquiries</a><br /></p>
+				<!-- End g_footer.html include -->
+				<!-- InstanceBeginEditable name="footer extras" -->
+				<!-- Include file temporarily disabled -->
+				<!-- include virtual="/template-assets/includes/c_footer_extras.inc" -->
+				<!-- InstanceEndEditable -->
+			</td>
+		</tr>
+	</table>
+<!-- END BOTTOM SECTION -->
+</body>
+<!-- TemplateEnd -->
+
+<!-- InstanceEnd -->
+</html>
